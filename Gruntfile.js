@@ -1,9 +1,9 @@
 /*
  * grunt-devbliss
- * http://www.devbliss.com
+ * https://github.com/devbliss/ecosystem-grunt-plugin
  *
- * Copyright (c) 2014 DEVBLISS
- * Licensed under the MIT license.
+ * Copyright (c) 2014 Devbliss
+ * Licensed under the Apache, License, 2.0 licenses.
  */
 
 'use strict';

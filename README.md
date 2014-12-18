@@ -1,6 +1,6 @@
 # grunt-devbliss
 
-> global tasks creator
+> The best Grunt plugin ever.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
