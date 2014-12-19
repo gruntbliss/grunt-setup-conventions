@@ -13,6 +13,25 @@ module.exports = function(grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
+  //require('load-grunt-tasks')(grunt,{pattern: ['!grunt-devbliss']});
+  //grunt.loadNpmTasks('grunt-bower-install');
+  //var bowerConfig = require('bower-config');
+  var helper = require('grunt-lib-contrib').init(grunt);
+ //var bowerInstall = require('grunt-bower-install').init(grunt);
+  grunt.initConfig({
+    bowerInstall: {
+      app: {
+        src: ['app/index.html']
+      }
+    }
+  });
+  grunt.registerTask('devbliss-bower-install', function() {
+    //grunt.loadNpmTasks('grunt-bower-install');
+    //grunt.task.run(['bowerInstall']);
+        grunt.log.warn('devbliss bower install implementation');
+  }
+  );
+
   grunt.registerMultiTask('devbliss', 'The best Grunt plugin ever.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
