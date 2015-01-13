@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 
     var wireDep = require('grunt-wiredep/tasks/wiredep.js')(grunt);
 
-    grunt.registerTask('devbliss-bower-install', function () {
+    grunt.registerTask('devbliss-wiredep', function () {
             grunt.config.merge({
                 wiredep: {
                     task: {
