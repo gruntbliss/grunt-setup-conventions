@@ -21,8 +21,6 @@ module.exports = function (grunt) {
 
             var devblissOptions = grunt.config('devbliss');
 
-            grunt.log.writeln('Devbliss config:'+config);
-
             grunt.config.merge({
                 connect: {
                     options: {
