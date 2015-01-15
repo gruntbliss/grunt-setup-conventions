@@ -10,18 +10,12 @@
 
 module.exports = function (grunt) {
 
-    var wireDep = require('grunt-wiredep/tasks/wiredep.js')(grunt);
+    require('grunt-wiredep/tasks/wiredep.js')(grunt);
+    require('grunt-connect-rewrite/tasks/connect_rewrite.js')(grunt);
+    require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
+    require('grunt-contrib-connect/tasks/connect.js')(grunt);
 
-    grunt.loadNpmTasks('grunt-connect-rewrite');
     var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
-
-    grunt.registerTask('devbliss-configureRewriteRules', function () {
-        grunt.task.run(['configureRewriteRules']);
-    });
-
-    grunt.registerTask('devbliss-configureProxies', function (config) {
-        grunt.task.run(['configureProxies:'+config]);
-    });
 
     grunt.registerTask('devbliss-connect', function (config) {
 
