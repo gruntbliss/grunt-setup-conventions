@@ -1,3 +1,7 @@
+v0.3.1:
+  date: 2015-01-15
+  changes:
+    - move grunt dependencies form dev to normal
 v0.3.0:
   date: 2015-01-15
   changes:
