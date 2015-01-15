@@ -1,0 +1,17 @@
+v0.3.0:
+  date: 2015-01-15
+  changes:
+    - add devbliss-connect task 
+v0.2.0:
+  date: 2015-01-14
+  changes:
+    - add devbliss-wiredep task
+    - remove IDE specific files
+v0.1.1:
+  date: 2014-12-19
+  changes:
+    - fix plugin description
+v0.1.0:
+ date: 2014-12-18
+ changes:
+   - initial setup
