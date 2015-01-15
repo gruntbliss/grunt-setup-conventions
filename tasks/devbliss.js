@@ -17,6 +17,57 @@ module.exports = function (grunt) {
 
     var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
 
+    grunt.registerTask('devbliss-configureProxies', function(config) {
+        grunt.config.merge({
+            connect: {
+                // configuration for task configureProxies from plugin grunt-connect-proxy
+                proxies: [{ // used for requests to the zuul service in local developement
+                    context: '/api',
+                    host: '172.17.42.1', // ip address of the host
+                    port: 8070,
+                    changeOrigin: true,
+                    xforward: false
+                }, { // used for content player in local developement
+                    context: '/qtiplayer',
+                    host: 'localhost',
+                    port: 13771,
+                    changeOrigin: true,
+                    xforward: false,
+                    rewrite: {
+                        '^/qtiplayer': ''
+                    }
+                }]
+            }
+        });
+        grunt.task.run(['configureProxies:'+config]);
+    });
+
+    grunt.registerTask('devbliss-configureRewriteRules', function(config) {
+        grunt.config.merge({
+            connect: {
+                // configuration for the task configureRewriteRules from plugin grunt-connect-rewrite
+                rules: [{
+                    from: '^/lat/$',
+                    to: 'http://0.0.0.0:8096/',
+                    redirect: 'permanent'
+                }, {
+                    from: '^/edi/$',
+                    to: 'http://0.0.0.0:8084/',
+                    redirect: 'permanent'
+                }, {
+                    from: '^/prep/$',
+                    to: 'http://0.0.0.0:8087/',
+                    redirect: 'permanent'
+                }, {
+                    from: '^/monitoring/(.*)$',
+                    to: 'http://0.0.0.0:8082',
+                    redirect: 'permanent'
+                }]
+            }
+        });
+        grunt.task.run(['configureRewriteRules']);
+    });
+
     grunt.registerTask('devbliss-connect', function (config) {
 
             var devblissOptions = grunt.config('devbliss');
@@ -45,43 +96,6 @@ module.exports = function (grunt) {
                             return middlewares;
                         }
                     },
-
-                    // configuration for the task configureRewriteRules from plugin grunt-connect-rewrite
-                    rules: [{
-                        from: '^/lat/$',
-                        to: 'http://0.0.0.0:8096/',
-                        redirect: 'permanent'
-                    }, {
-                        from: '^/edi/$',
-                        to: 'http://0.0.0.0:8084/',
-                        redirect: 'permanent'
-                    }, {
-                        from: '^/prep/$',
-                        to: 'http://0.0.0.0:8087/',
-                        redirect: 'permanent'
-                    }, {
-                        from: '^/monitoring/(.*)$',
-                        to: 'http://0.0.0.0:8082',
-                        redirect: 'permanent'
-                    }],
-
-                    // configuration for task configureProxies from plugin grunt-connect-proxy
-                    proxies: [{ // used for requests to the zuul service in local developement
-                        context: '/api',
-                        host: '172.17.42.1', // ip address of the host
-                        port: 8070,
-                        changeOrigin: true,
-                        xforward: false
-                    }, { // used for content player in local developement
-                        context: '/qtiplayer',
-                        host: 'localhost',
-                        port: 13771,
-                        changeOrigin: true,
-                        xforward: false,
-                        rewrite: {
-                            '^/qtiplayer': ''
-                        }
-                    }],
 
                     app: {
                         options: {
@@ -121,7 +135,6 @@ module.exports = function (grunt) {
                     }
                 }
             });
-
             grunt.task.run(['connect:'+config]);
         }
     );

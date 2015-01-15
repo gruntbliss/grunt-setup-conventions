@@ -1,3 +1,7 @@
+v0.3.2:
+  date: 2015-01-15
+  changes:
+    - fix configuration for proxies and rewrite rules
 v0.3.1:
   date: 2015-01-15
   changes:
