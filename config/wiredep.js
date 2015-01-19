@@ -1,3 +1,15 @@
-/**
- * Created by bankmann on 19.01.15.
- */
+function loadConfig() {
+    wiredepConfig = {
+        wiredep: {
+            task: {
+                // Point to the files that should be updated when
+                // you run `grunt wiredep`
+                src: [
+                    'app/index.html'
+                ]
+            }
+        }
+    };
+}
+
+module.exports.loadConfig = loadConfig;
