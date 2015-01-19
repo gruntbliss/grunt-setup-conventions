@@ -17,7 +17,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-devbliss');
 ```
 
-## The "devbliss" task
+## The "grunt-devbliss" tasks
 
 ### Overview
 In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
@@ -25,65 +25,66 @@ In your project's Gruntfile, add a section named `devbliss` to the data object p
 ```js
 grunt.initConfig({
   devbliss: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+      port: 9000,
+      testport: 9001,
+      livereload: 9002
   },
 });
 ```
 
 ### Options
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
+- **port**: port on which the HTTP server is running
+- **testport**: port on which the HTTP server used for the tests is running
+- **livereload**: websocket port used for reloading application when local files have changed
 
-A string value that is used to do something with whatever.
+### Tasks
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+- `devbliss-wiredep`: add includes scripts in the index.html file for each bower component found
+- `devbliss-connect`: configures and starts a default express server
+- `devbliss-configureRewriteRules`: use default rewrite rules
+- `evbliss-configureProxies`: use default proxies configuration
 
-A string value that is used to do something else with whatever else.
+### Requirements
 
-### Usage Examples
+To be able to use the tasks, your project must have the following structure:
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  devbliss: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  devbliss: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
+``
+my-npm-project
+|-- app/              --> where the application files are
+|   -- index.html
+|-- dist/             --> where the application is built
+|-- Gruntfile.js
+|-- package.json
 ```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+v0.3.2:
+  date: 2015-01-15
+  changes:
+    - fix configuration for proxies and rewrite rules
+v0.3.1:
+  date: 2015-01-15
+  changes:
+    - move grunt dependencies form dev to normal
+v0.3.0:
+  date: 2015-01-15
+  changes:
+    - add devbliss-connect task
+v0.2.0:
+  date: 2015-01-14
+  changes:
+    - add devbliss-wiredep task
+    - remove IDE specific files
+v0.1.1:
+  date: 2014-12-19
+  changes:
+    - fix plugin description
+v0.1.0:
+ date: 2014-12-18
+ changes:
+   - initial setup
+
