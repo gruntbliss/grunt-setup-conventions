@@ -15,30 +15,16 @@ module.exports = function (grunt) {
     require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
     require('grunt-contrib-connect/tasks/connect.js')(grunt);
 
+    require('../config/configureProxies.js').loadConfig();
+    require('../config/connect.js');
+    require('../config/wiredep.js');
+
     var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
 
     grunt.registerTask('devbliss-configureProxies', function(config) {
-        grunt.config.merge({
-            connect: {
-                // configuration for task configureProxies from plugin grunt-connect-proxy
-                proxies: [{ // used for requests to the zuul service in local developement
-                    context: '/api',
-                    host: '172.17.42.1', // ip address of the host
-                    port: 8070,
-                    changeOrigin: true,
-                    xforward: false
-                }, { // used for content player in local developement
-                    context: '/qtiplayer',
-                    host: 'localhost',
-                    port: 13771,
-                    changeOrigin: true,
-                    xforward: false,
-                    rewrite: {
-                        '^/qtiplayer': ''
-                    }
-                }]
-            }
-        });
+
+        grunt.log.writeln('config:"' + configureProxiesConfig);
+        grunt.config.merge(configureProxiesConfig);
         grunt.task.run(['configureProxies:'+config]);
     });
 
