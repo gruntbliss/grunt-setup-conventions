@@ -77,6 +77,6 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 ---
 
-Task submitted by []()
+Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Jan 19 2015 12:40:02.*
+*This file was generated on Mon Jan 19 2015 12:42:20.*
