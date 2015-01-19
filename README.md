@@ -1,6 +1,6 @@
 # grunt-devbliss
 
-> The best Grunt plugin ever.
+> The Grunt plugin for easy project setup
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
