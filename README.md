@@ -1,6 +1,8 @@
-# grunt-devbliss
+# grunt-devbliss v0.3.2
 
-> The Grunt plugin for easy project setup
+> The Devbliss GRUNT Plugin
+
+
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -17,9 +19,9 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-devbliss');
 ```
 
-## The "grunt-devbliss" tasks
+### The "grunt-devbliss" tasks
 
-### Overview
+#### Overview
 In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
 
 ```js
@@ -32,24 +34,24 @@ grunt.initConfig({
 });
 ```
 
-### Options
+#### Options
 
 - **port**: port on which the HTTP server is running
 - **testport**: port on which the HTTP server used for the tests is running
 - **livereload**: websocket port used for reloading application when local files have changed
 
-### Tasks
+#### Tasks
 
 - `devbliss-wiredep`: add includes scripts in the index.html file for each bower component found
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `evbliss-configureProxies`: use default proxies configuration
 
-### Requirements
+#### Requirements
 
 To be able to use the tasks, your project must have the following structure:
 
-``
+```
 my-npm-project
 |-- app/              --> where the application files are
 |   -- index.html
@@ -58,33 +60,23 @@ my-npm-project
 |-- package.json
 ```
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+### Local set up
+
+To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.
+
 
 ## Release History
-v0.3.2:
-  date: 2015-01-15
-  changes:
-    - fix configuration for proxies and rewrite rules
-v0.3.1:
-  date: 2015-01-15
-  changes:
-    - move grunt dependencies form dev to normal
-v0.3.0:
-  date: 2015-01-15
-  changes:
-    - add devbliss-connect task
-v0.2.0:
-  date: 2015-01-14
-  changes:
-    - add devbliss-wiredep task
-    - remove IDE specific files
-v0.1.1:
-  date: 2014-12-19
-  changes:
-    - fix plugin description
-v0.1.0:
- date: 2014-12-18
- changes:
-   - initial setup
 
+ * 2015-01-19   v0.4.0-SNAPSHOT   update documentation
+ * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
+ * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
+ * 2015-01-15   v0.3.0   add devbliss-connect task
+ * 2015-01-14   v0.2.0   add devbliss-wiredep task remove IDE specific files
+ * 2014-12-19   v0.1.1   fix plugin description
+ * 2014-12-18   v0.1.0   initial setup
+
+---
+
+Task submitted by []()
+
+*This file was generated on Mon Jan 19 2015 12:40:02.*
