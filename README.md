@@ -49,7 +49,7 @@ grunt.initConfig({
 
 To be able to use the tasks, your project must have the following structure:
 
-``
+```
 my-npm-project
 |-- app/              --> where the application files are
 |   -- index.html
