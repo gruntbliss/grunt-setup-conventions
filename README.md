@@ -1,4 +1,4 @@
-# grunt-devbliss v0.3.2
+# grunt-devbliss v0.3.3
 
 > The Devbliss GRUNT Plugin
 
@@ -67,7 +67,7 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 ## Release History
 
- * 2015-01-19   v0.4.0-SNAPSHOT   update documentation
+ * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
  * 2015-01-15   v0.3.0   add devbliss-connect task
@@ -79,4 +79,4 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Jan 19 2015 12:42:20.*
+*This file was generated on Mon Jan 19 2015 13:18:58.*
