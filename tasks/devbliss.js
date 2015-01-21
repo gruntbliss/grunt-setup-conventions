@@ -1,22 +1,42 @@
-/*
- * grunt-devbliss
- * https://github.com/devbliss/ecosystem-grunt-plugin
- *
- * Copyright (c) 2014 Devbliss
- * Licensed under the Apache, License, 2.0 licenses.
- */
+ function loadTask(grunt) {
 
-'use strict';
+    grunt.registerMultiTask('devbliss', 'The best Grunt plugin ever.', function () {
+        // Merge task-specific and/or target-specific options with these defaults.
+        var options = this.options({
+            punctuation: '.',
+            separator: ', '
+        });
+
+        // Iterate over all specified file groups.
+        this.files.forEach(function (f) {
+            // Concat specified files.
+            var src = f.src.filter(function (filepath) {
+                // Warn on and remove invalid source files (if nonull was set).
+                if (!grunt.file.exists(filepath)) {
+                    grunt.log.warn('Source file "' + filepath + '" not found.');
+                    return false;
+                } else {
+                    return true;
+                }
+            }).map(function (filepath) {
+                // Read file source.
+                return grunt.file.read(filepath);
+            }).join(grunt.util.normalizelf(options.separator));
+
+            // Handle options.
+            src += options.punctuation;
+
+            // Write the destination file.
+            grunt.file.write(f.dest, src);
+
+            // Print a success message.
+            grunt.log.writeln('File "' + f.dest + '" created.');
+        });
+    });
+}
+
+module.exports.loadTask = loadTask;
 
 module.exports = function (grunt) {
-
-    // Devbliss Tasks and Configuration
-    require('../config/configureProxies.js').loadTask(grunt);
-    require('../config/configureRewriteRules.js').loadTask(grunt);
-
-    require('../config/connect.js').loadTask(grunt);
-    require('../config/wiredep.js').loadTask(grunt);
-
-    require('../config/devbliss.js').loadTask(grunt);
-
-};
+    loadTask(grunt);
+}

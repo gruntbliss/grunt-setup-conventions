@@ -37,3 +37,8 @@ function loadTask(grunt) {
 }
 
 module.exports.loadTask = loadTask;
+
+module.exports = function (grunt) {
+    loadTask(grunt);
+}
+
