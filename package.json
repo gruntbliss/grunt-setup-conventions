@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/devbliss/ecosystem-grunt-plugin/issues"
   },
-  "main": "tasks/devbliss.js",
+  "main": "Gruntfile.js",
   "licenses": [
     {
       "type": "Apache",
