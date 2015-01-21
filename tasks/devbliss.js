@@ -1,4 +1,6 @@
- function loadTask(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
 
     grunt.registerMultiTask('devbliss', 'The best Grunt plugin ever.', function () {
         // Merge task-specific and/or target-specific options with these defaults.
@@ -33,10 +35,4 @@
             grunt.log.writeln('File "' + f.dest + '" created.');
         });
     });
-}
-
-module.exports.loadTask = loadTask;
-
-module.exports = function (grunt) {
-    loadTask(grunt);
 }

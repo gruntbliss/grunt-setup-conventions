@@ -1,10 +1,12 @@
-function loadTask(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
 
     function loadConfig(grunt) {
-        configureProxiesConfig = {
+        return {
             connect: {
                 // configuration for task configureProxies from plugin grunt-connect-proxy
                 proxies: [
@@ -31,15 +33,8 @@ function loadTask(grunt) {
     }
 
     grunt.registerTask('devbliss-configureProxies', function(config) {
-        loadConfig(grunt);
-        grunt.config.merge(configureProxiesConfig);
+        grunt.config.merge(loadConfig(grunt));
         grunt.task.run(['configureProxies:'+config]);
     });
-}
-
-module.exports.loadTask = loadTask;
-
-module.exports = function (grunt) {
-    loadTask(grunt);
 }
 

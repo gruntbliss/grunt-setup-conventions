@@ -1,10 +1,12 @@
-function loadTask(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-wiredep/tasks/wiredep.js')(grunt);
 
     function loadConfig(grunt) {
-        wiredepConfig = {
+        return {
             wiredep: {
                 task: {
                     // Point to the files that should be updated when
@@ -18,15 +20,8 @@ function loadTask(grunt) {
     }
 
     grunt.registerTask('devbliss-wiredep', function () {
-            loadConfig(grunt);
-            grunt.config.merge(wiredepConfig);
+            grunt.config.merge(loadConfig(grunt));
             grunt.task.run(['wiredep']);
         }
     );
-}
-
-module.exports.loadTask = loadTask;
-
-module.exports = function (grunt) {
-    loadTask(grunt);
 }

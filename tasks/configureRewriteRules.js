@@ -1,10 +1,12 @@
-function loadTask(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-connect-rewrite/tasks/connect_rewrite.js')(grunt);
 
     function loadConfig(grunt) {
-        configureRewriteRulesConfig = {
+        return {
             connect: {
                 // configuration for the task configureRewriteRules from plugin grunt-connect-rewrite
                 rules: [{
@@ -28,17 +30,8 @@ function loadTask(grunt) {
         };
     }
 
-
     grunt.registerTask('devbliss-configureRewriteRules', function(config) {
-        loadConfig(grunt);
-        grunt.config.merge(configureRewriteRulesConfig);
+        grunt.config.merge(loadConfig(grunt));
         grunt.task.run(['configureRewriteRules']);
     });
 }
-
-module.exports.loadTask = loadTask;
-
-module.exports = function (grunt) {
-    loadTask(grunt);
-}
-

@@ -1,4 +1,6 @@
-function loadTask(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
 
     function loadConfig(grunt) {
 
@@ -9,7 +11,7 @@ function loadTask(grunt) {
         var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
         var devblissOptions = grunt.config('devbliss');
 
-        connectConfig = {
+        return {
             connect: {
                 options: {
                     port: devblissOptions.port,
@@ -75,15 +77,8 @@ function loadTask(grunt) {
     }
 
     grunt.registerTask('devbliss-connect', function (config) {
-            loadConfig(grunt);
-            grunt.config.merge(connectConfig);
+            grunt.config.merge(loadConfig(grunt));
             grunt.task.run(['connect:'+config]);
         }
     );
-}
-
-module.exports.loadTask = loadTask;
-
-module.exports = function (grunt) {
-    loadTask(grunt);
 }
