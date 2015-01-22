@@ -45,7 +45,8 @@ grunt.initConfig({
 - `devbliss-wiredep`: add includes scripts in the index.html file for each bower component found
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
-- `evbliss-configureProxies`: use default proxies configuration
+- `devbliss-configureProxies`: use default proxies configuration
+- `devbliss-watch`: watches file changes and reloads them while development
 
 #### Requirements
 
@@ -64,9 +65,15 @@ my-npm-project
 
 To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.
 
+### Recreate README.MD
+
+To recreate the README.MD just run `grunt build-contrib`.
+
+
 
 ## Release History
 
+ *    v0.3.4-Snapshot   refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -79,4 +86,4 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Jan 19 2015 13:18:58.*
+*This file was generated on Thu Jan 22 2015 15:12:03.*

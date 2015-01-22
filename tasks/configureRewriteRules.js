@@ -34,4 +34,4 @@ module.exports = function (grunt) {
         grunt.config.merge(loadConfig(grunt));
         grunt.task.run(['configureRewriteRules']);
     });
-}
+};
