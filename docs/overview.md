@@ -26,6 +26,7 @@ grunt.initConfig({
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while development
+- `devbliss-recess`: convert less to css
 
 ## Requirements
 

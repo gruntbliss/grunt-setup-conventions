@@ -1,5 +1,6 @@
 v0.3.4-Snapshot:
   changes:
+    - added devbliss-recess
     - added devbliss-watch
     - refactored into modules
 v0.3.3:

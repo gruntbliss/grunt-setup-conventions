@@ -5,7 +5,6 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-recess/tasks/recess.js')(grunt);
 
-    // Watches files for changes and runs tasks based on the changed files
     function loadConfig(grunt) {
         return {
             // CONVERT LESS TO CSS IN TEMPFOLDER
