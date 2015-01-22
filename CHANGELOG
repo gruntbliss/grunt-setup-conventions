@@ -1,5 +1,6 @@
 v0.3.4-Snapshot:
   changes:
+    - added devbliss-watch
     - refactored into modules
 v0.3.3:
   date: 2015-01-19
