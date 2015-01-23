@@ -47,6 +47,7 @@ grunt.initConfig({
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
+- `devbliss-recess`: convert less to css
 
 #### Requirements
 
@@ -74,7 +75,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- *    v0.3.4-Snapshot   added devbliss-watch refactored into modules
+ *    v0.3.4-Snapshot   added devbliss-recess added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -87,4 +88,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Jan 23 2015 10:54:12.*
+*This file was generated on Fri Jan 23 2015 11:28:26.*
