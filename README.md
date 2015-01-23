@@ -5,7 +5,7 @@
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
+This plugin requires Grunt `0.4.x`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -46,7 +46,7 @@ grunt.initConfig({
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
-- `devbliss-watch`: watches file changes and reloads them while development
+- `devbliss-watch`: watches file changes and reloads them while developing
 
 #### Requirements
 
@@ -86,4 +86,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Jan 22 2015 15:12:45.*
+*This file was generated on Fri Jan 23 2015 10:49:05.*

@@ -25,7 +25,7 @@ grunt.initConfig({
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
-- `devbliss-watch`: watches file changes and reloads them while development
+- `devbliss-watch`: watches file changes and reloads them while developing
 
 ## Requirements
 
