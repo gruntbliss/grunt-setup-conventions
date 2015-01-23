@@ -54,7 +54,8 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are
+|-- app/              --> where the application files are (html, js, css)
+|   -- styles/less    --> where the applications less files are
 |   -- index.html
 |-- dist/             --> where the application is built
 |-- Gruntfile.js
@@ -86,4 +87,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Jan 23 2015 10:49:05.*
+*This file was generated on Fri Jan 23 2015 10:54:12.*
