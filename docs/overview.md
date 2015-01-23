@@ -25,8 +25,7 @@ grunt.initConfig({
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
-- `devbliss-watch`: watches file changes and reloads them while development
-- `devbliss-recess`: convert less to css
+- `devbliss-watch`: watches file changes and reloads them while developing
 
 ## Requirements
 
@@ -34,7 +33,8 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are
+|-- app/              --> where the application files are (html, js, css)
+|   -- styles/less    --> where the applications less files are
 |   -- index.html
 |-- dist/             --> where the application is built
 |-- Gruntfile.js

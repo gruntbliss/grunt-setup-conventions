@@ -5,7 +5,7 @@
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
+This plugin requires Grunt `0.4.x`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -46,8 +46,7 @@ grunt.initConfig({
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
-- `devbliss-watch`: watches file changes and reloads them while development
-- `devbliss-recess`: convert less to css
+- `devbliss-watch`: watches file changes and reloads them while developing
 
 #### Requirements
 
@@ -55,7 +54,8 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are
+|-- app/              --> where the application files are (html, js, css)
+|   -- styles/less    --> where the applications less files are
 |   -- index.html
 |-- dist/             --> where the application is built
 |-- Gruntfile.js
@@ -74,7 +74,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- *    v0.3.4-Snapshot   added devbliss-recess added devbliss-watch refactored into modules
+ *    v0.3.4-Snapshot   added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -87,4 +87,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Jan 22 2015 16:55:39.*
+*This file was generated on Fri Jan 23 2015 10:54:12.*
