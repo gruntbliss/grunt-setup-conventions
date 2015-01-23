@@ -33,7 +33,8 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are
+|-- app/              --> where the application files are (html, js, css)
+|   -- styles/less    --> where the applications less files are
 |   -- index.html
 |-- dist/             --> where the application is built
 |-- Gruntfile.js
