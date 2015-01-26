@@ -55,6 +55,10 @@
     "grunt-connect-rewrite": "^0.2.1",
     "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-watch": "~0.5.2",
-    "grunt-recess": "^0.7.0"
+    "grunt-recess": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "jshint-stylish": "~0.1.3"
   }
 }

@@ -27,6 +27,9 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
+- `devbliss-jshint`:
+- `devbliss-copy`:
+- `devbliss-concat`:
 
 ## Requirements
 
@@ -34,10 +37,16 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are (html, js, css)
-|   -- styles/less    --> where the applications less files are
+|-- app/                        --> where the application files are (html, js, css)
+|   -- bower_components/        --> bower dependencies
+|   -- app/bower_components/ecosystem-main-frontend/ -->
+|   -- app_components/          --> modules of the app itself
+|   -- scripts/                 --> more js scripts
+|   -- styles/less/             --> where the applications less files are
+|   -- styles/less/Base.less    --> where the applications less files are
 |   -- index.html
-|-- dist/             --> where the application is built
+|-- test/                       --> application test js files
+|-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
 ```
