@@ -48,6 +48,9 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
+- `devbliss-jshint`:
+- `devbliss-copy`:
+- `devbliss-concat`:
 
 #### Requirements
 
@@ -55,10 +58,16 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are (html, js, css)
-|   -- styles/less    --> where the applications less files are
+|-- app/                        --> where the application files are (html, js, css)
+|   -- bower_components/        --> bower dependencies
+|   -- app/bower_components/ecosystem-main-frontend/ -->
+|   -- app_components/          --> modules of the app itself
+|   -- scripts/                 --> more js scripts
+|   -- styles/less/             --> where the applications less files are
+|   -- styles/less/Base.less    --> where the applications less files are
 |   -- index.html
-|-- dist/             --> where the application is built
+|-- test/                       --> application test js files
+|-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
 ```
@@ -75,7 +84,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- *    v0.3.4-Snapshot   added devbliss-recess added devbliss-watch refactored into modules
+ *    v0.3.4-Snapshot   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -88,4 +97,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Jan 23 2015 11:28:26.*
+*This file was generated on Mon Jan 26 2015 13:15:43.*
