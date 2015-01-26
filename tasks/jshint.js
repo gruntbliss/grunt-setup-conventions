@@ -22,13 +22,13 @@ module.exports = function (grunt) {
                     options: {jshintrc: 'test/.jshintrc'},
                     src: ['test/**/*.js']
                 }
-            },
+            }
         };
     }
 
     grunt.registerTask('devbliss-jshint', function () {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['wiredep']);
+            grunt.task.run(['jshint']);
         }
     );
 };
