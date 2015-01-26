@@ -48,9 +48,9 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
-- `devbliss-jshint`:
-- `devbliss-copy`:
-- `devbliss-concat`:
+- `devbliss-jshint`: validate js code quality
+- `devbliss-copy`: copy files from app to dist
+- `devbliss-concat`: join files
 
 #### Requirements
 
@@ -60,11 +60,12 @@ To be able to use the tasks, your project must have the following structure:
 my-npm-project
 |-- app/                        --> where the application files are (html, js, css)
 |   -- bower_components/        --> bower dependencies
-|   -- app/bower_components/ecosystem-main-frontend/ -->
+|   -- app/bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
 |   -- scripts/                 --> more js scripts
+|   -- styles/                  --> css files reside here
 |   -- styles/less/             --> where the applications less files are
-|   -- styles/less/Base.less    --> where the applications less files are
+|   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
 |-- test/                       --> application test js files
 |-- dist/                       --> where the application is built
@@ -97,4 +98,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Jan 26 2015 13:15:43.*
+*This file was generated on Mon Jan 26 2015 17:15:44.*

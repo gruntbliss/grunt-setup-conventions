@@ -42,8 +42,9 @@ my-npm-project
 |   -- app/bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
 |   -- scripts/                 --> more js scripts
+|   -- styles/                  --> css files reside here
 |   -- styles/less/             --> where the applications less files are
-|   -- styles/less/Base.less    --> where the applications less files are
+|   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
 |-- test/                       --> application test js files
 |-- dist/                       --> where the application is built
