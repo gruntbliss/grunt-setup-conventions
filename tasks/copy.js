@@ -42,9 +42,12 @@ module.exports = function (grunt) {
                         {
                             expand: true,
                             dot: true,
-                            cwd: 'app/bower_components/ecosystem-main-frontend/release/styles/bootstrap/fonts',
-                            dest: '<%= lat.dist %>/styles/fonts',
-                            src: ['*']
+                            cwd: 'app',
+                            src: [
+                                'styles/css/bootstrap/fonts',
+                                'bower_components/ecosystem-main-frontend/release/styles/bootstrap/fonts'
+                            ],
+                            dest: 'dist/styles/fonts'
                         }
                     ]
                 },
@@ -54,8 +57,21 @@ module.exports = function (grunt) {
                             expand: true,
                             dot: true,
                             cwd: 'app',
-                            dest: 'dist',
-                            src: ['bower_components/ecosystem-main-frontend/release/images/**/*','images/placeholder/*']
+                            src: ['bower_components/ecosystem-main-frontend/release/images/**/*','images/placeholder/*', 'styles/img/**/*'],
+                            dest: 'dist'
+                        }
+                    ]
+                },
+                release: {
+                    files: [
+                        {
+                            expand: true,
+                            dot: true,
+                            cwd: 'app/app_components/pageModule/',
+                            dest: 'release/',
+                            src: [
+                                '**/*'
+                            ]
                         }
                     ]
                 }
