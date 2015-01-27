@@ -47,6 +47,10 @@ grunt.initConfig({
 - `devbliss-configureRewriteRules`: use default rewrite rules
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
+- `devbliss-recess`: convert less to css
+- `devbliss-jshint`: validate js code quality
+- `devbliss-copy`: copy files from app to dist
+- `devbliss-concat`: join files
 
 #### Requirements
 
@@ -54,10 +58,19 @@ To be able to use the tasks, your project must have the following structure:
 
 ```
 my-npm-project
-|-- app/              --> where the application files are (html, js, css)
-|   -- styles/less    --> where the applications less files are
+|-- app/                        --> where the application files are (html, js, css)
+|   -- bower_components/        --> bower dependencies
+|   -- app/bower_components/ecosystem-main-frontend/ --> main frontend include
+|   -- app_components/          --> modules of the app itself
+|   -- app/app_dev_components/  --> development only components
+|   -- scripts/                 --> more js scripts
+|   -- styles/                  --> css files reside here
+|   -- views/                   --> views outside any module
+|   -- styles/less/             --> where the applications less files are
+|   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
-|-- dist/             --> where the application is built
+|-- test/                       --> application test js files
+|-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
 ```
@@ -74,7 +87,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- *    v0.3.4-Snapshot   added devbliss-watch refactored into modules
+ *    v0.3.4-Snapshot   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -87,4 +100,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Jan 23 2015 10:54:12.*
+*This file was generated on Tue Jan 27 2015 11:22:55.*
