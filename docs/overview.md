@@ -41,8 +41,10 @@ my-npm-project
 |   -- bower_components/        --> bower dependencies
 |   -- app/bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
+|   -- app/app_dev_components/  --> development only components
 |   -- scripts/                 --> more js scripts
 |   -- styles/                  --> css files reside here
+|   -- views/                   --> views outside any module
 |   -- styles/less/             --> where the applications less files are
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html

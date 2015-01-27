@@ -62,8 +62,10 @@ my-npm-project
 |   -- bower_components/        --> bower dependencies
 |   -- app/bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
+|   -- app/app_dev_components/  --> development only components
 |   -- scripts/                 --> more js scripts
 |   -- styles/                  --> css files reside here
+|   -- views/                   --> views outside any module
 |   -- styles/less/             --> where the applications less files are
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
@@ -98,4 +100,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Jan 26 2015 17:15:44.*
+*This file was generated on Tue Jan 27 2015 11:22:55.*
