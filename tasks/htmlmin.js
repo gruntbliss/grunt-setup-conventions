@@ -8,21 +8,23 @@ module.exports = function (grunt) {
     function loadConfig(grunt) {
         // MINIFI TEMP HTML AND MOVE IT TO DIST FOLDER
         return {
-            dist: {
-                options: {
-                    collapseWhitespace: true,
+            htmlmin: {
+                dist: {
+                    options: {
+                        collapseWhitespace: true,
                         collapseBooleanAttributes: true,
                         removeCommentsFromCDATA: true,
                         removeOptionalTags: true
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'dist',
-                        src: ['**/*.html'],
-                        dest: 'dist'
-                    }
-                ]
+                    },
+                    files: [
+                        {
+                            expand: true,
+                            cwd: 'dist',
+                            src: ['**/*.html'],
+                            dest: 'dist'
+                        }
+                    ]
+                }
             }
         }
 
