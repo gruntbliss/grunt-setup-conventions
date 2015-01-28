@@ -1,6 +1,7 @@
-v0.3.4:
+v0.3.4-SNAPSHOT:
   date: 2015-01-28 
   changes:
+    - added devbliss-clean, devbliss-rev, devbliss-processhtml
     - added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint
     - added devbliss-watch
     - refactored into modules
