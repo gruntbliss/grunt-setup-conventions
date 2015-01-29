@@ -30,6 +30,9 @@ grunt.initConfig({
 - `devbliss-jshint`: validate js code quality
 - `devbliss-copy`: copy files from app to dist
 - `devbliss-concat`: join files
+- `devbliss-htmlmin`: minify html files
+- `devbliss-useminPrepare`: prepare configuration for using minified files
+- `devbliss-usemin`: use minified files
 
 ## Requirements
 
