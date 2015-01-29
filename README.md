@@ -1,4 +1,4 @@
-# grunt-devbliss v0.3.3
+# grunt-devbliss v0.4.0-SNAPSHOT
 
 > The Devbliss GRUNT Plugin
 
@@ -51,6 +51,12 @@ grunt.initConfig({
 - `devbliss-jshint`: validate js code quality
 - `devbliss-copy`: copy files from app to dist
 - `devbliss-concat`: join files
+- `devbliss-clean`: remove generated files
+- `devbliss-rev`: add md5 to file name
+- `devbliss-processhtml`: process html file at build time for the test environments
+- `devbliss-htmlmin`: minify html files
+- `devbliss-useminPrepare`: prepare configuration for using minified files
+- `devbliss-usemin`: use minified files
 
 #### Requirements
 
@@ -87,7 +93,8 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- *    v0.3.4-Snapshot   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
+ * 2015-01-29   v0.4.0-SNAPSHOT   added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
+ * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
  * 2015-01-15   v0.3.1   move grunt dependencies form dev to normal
@@ -100,4 +107,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Tue Jan 27 2015 11:22:55.*
+*This file was generated on Thu Jan 29 2015 16:29:08.*

@@ -33,6 +33,9 @@ grunt.initConfig({
 - `devbliss-clean`: remove generated files
 - `devbliss-rev`: add md5 to file name
 - `devbliss-processhtml`: process html file at build time for the test environments
+- `devbliss-htmlmin`: minify html files
+- `devbliss-useminPrepare`: prepare configuration for using minified files
+- `devbliss-usemin`: use minified files
 
 ## Requirements
 
