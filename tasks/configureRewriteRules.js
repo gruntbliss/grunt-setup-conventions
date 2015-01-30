@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-configureRewriteRules', function(config) {
+    grunt.registerTask('devbliss-configureRewriteRules', function() {
         grunt.config.merge(loadConfig(grunt));
         grunt.task.run(['configureRewriteRules']);
     });

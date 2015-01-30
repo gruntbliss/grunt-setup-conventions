@@ -75,8 +75,12 @@ module.exports = function (grunt) {
                     options: {
                         livereload: devblissOptions.livereload
                     }
-                }
+                },
                 ///////////////////////
+
+                dist: {
+                    files: []
+                }
             }
         };
     }

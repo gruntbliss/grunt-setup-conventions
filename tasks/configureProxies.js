@@ -32,8 +32,8 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-configureProxies', function(config) {
+    grunt.registerTask('devbliss-configureProxies', function() {
         grunt.config.merge(loadConfig(grunt));
-        grunt.task.run(['configureProxies:'+config]);
+        grunt.task.run(['configureProxies']);
     });
 };

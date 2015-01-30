@@ -44,10 +44,10 @@ module.exports = function (grunt) {
                             dot: true,
                             cwd: 'app',
                             src: [
-                                'styles/css/bootstrap/fonts',
-                                'bower_components/ecosystem-main-frontend/release/styles/bootstrap/fonts'
+                                'styles/css/bootstrap/fonts/**/*',
+                                'bower_components/ecosystem-main-frontend/release/styles/bootstrap/fonts/**/*'
                             ],
-                            dest: 'dist/styles/fonts'
+                            dest: 'dist'
                         }
                     ]
                 },
@@ -57,7 +57,11 @@ module.exports = function (grunt) {
                             expand: true,
                             dot: true,
                             cwd: 'app',
-                            src: ['bower_components/ecosystem-main-frontend/release/images/**/*','images/placeholder/*', 'styles/img/**/*'],
+                            src: [
+                                'bower_components/ecosystem-main-frontend/release/images/**/*',
+                                'images/placeholder/*',
+                                'styles/img/**/*'
+                            ],
                             dest: 'dist'
                         }
                     ]
@@ -79,9 +83,10 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-copy', function () {
+    grunt.registerTask('devbliss-copy', function (config) {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['copy']);
+            config = (config != null) ? ':' + config : '';
+            grunt.task.run(['copy' + config]);
         }
     );
 };
