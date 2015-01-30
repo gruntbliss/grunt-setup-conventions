@@ -57,6 +57,14 @@ module.exports = function (grunt) {
                     tasks: ['jshint:test']
                 },
 
+                jshint: {
+                    files: ['app/**/*.js', 'Gruntfile.js'],
+                    tasks: ['jshint'],
+                    options: {
+                        livereload: devblissOptions.livereload
+                    }
+                },
+
                 ///////////////////////
 
                 ///////////////////////
