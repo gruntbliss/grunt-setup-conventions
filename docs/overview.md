@@ -36,6 +36,13 @@ grunt.initConfig({
 - `devbliss-htmlmin`: minify html files
 - `devbliss-useminPrepare`: prepare configuration for using minified files
 - `devbliss-usemin`: use minified files
+- `devbliss-cssmin`: use css minified files
+
+- `build`: builds the project
+- `serve`: serves the project locally in your browser
+- `server`: deprecated serve alias for compatibility
+- `default`: build and serve
+
 
 ## Requirements
 
