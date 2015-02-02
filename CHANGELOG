@@ -1,6 +1,7 @@
 v0.4.0-SNAPSHOT:
   date: 2015-01-29
   changes:
+    - add optional targets for clean, copy and processHtml
     - added devbliss-clean, devbliss-rev, devbliss-processhtml
     - added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
 v0.3.4:
