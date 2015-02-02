@@ -24,25 +24,22 @@ module.exports = function (grunt) {
        ]);
     });
 
-    grunt.registerTask('devbliss-serve-app', function () {
+    grunt.registerTask('devbliss-serve', function (config) {
         grunt.task.run([
             //'clean:dist',
             'devbliss-wiredep',
-            'devbliss-configureProxies:server',
+            'devbliss-configureProxies',
             'devbliss-configureRewriteRules',
-            'devbliss-connect:app',
-            'devbliss-watch'
+            //'devbliss-connect' + config,
+            //'devbliss-watch' + config
         ]);
-    });
-
-    grunt.registerTask('devbliss-serve-dist', function () {
+        if (config === 'dist') {
+            grunt.task.run(['devbliss-build']);
+        }
+        config = (config != null) ? ':'+config : '';
         grunt.task.run([
-            //'clean:dist',
-            'devbliss-wiredep',
-            'devbliss-configureProxies:server',
-            'devbliss-configureRewriteRules',
-            'devbliss-connect:dist',
-            'devbliss-watch:dist'
+            'devbliss-connect' + config,
+            'devbliss-watch' + config
         ]);
     });
 };
