@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-contrib-copy/tasks/copy.js')(grunt);
+    var helpers = require('./util/helpers.js');
 
     function loadConfig(grunt) {
         return {
@@ -79,9 +80,9 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-copy', function () {
+    grunt.registerTask('devbliss-copy', function (config) {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['copy']);
+            grunt.task.run(['copy' + helpers.gruntTarget(config)]);
         }
     );
 };
