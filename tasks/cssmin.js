@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
     // External Dependencies import
-    require('grunt-contrib-clean/tasks/clean.js')(grunt);
+    require('grunt-contrib-cssmin/tasks/cssmin.js')(grunt);
 
     grunt.registerTask('devbliss-cssmin', function () {
             grunt.task.run(['clean']);

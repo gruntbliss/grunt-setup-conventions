@@ -4,7 +4,10 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
-            return grunt.task.run(['build','devbliss-configureProxies:server','devbliss-connect:dist:keepalive']);
+            return grunt.task.run(['build',
+                                   'devbliss-configureProxies:server',
+                                   'devbliss-configureRewriteRules',
+                                   'devbliss-connect:dist:keepalive']);
         }
 
         grunt.task.run([

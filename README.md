@@ -61,9 +61,6 @@ grunt.initConfig({
 
 - `build`: builds the project
 - `serve`: serves the project locally in your browser
-- `server`: deprecated serve alias for compatibility
-- `default`: build and serve
-
 
 #### Requirements
 
@@ -114,4 +111,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Feb 02 2015 14:08:00.*
+*This file was generated on Mon Feb 02 2015 15:33:27.*

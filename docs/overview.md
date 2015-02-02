@@ -40,9 +40,6 @@ grunt.initConfig({
 
 - `build`: builds the project
 - `serve`: serves the project locally in your browser
-- `server`: deprecated serve alias for compatibility
-- `default`: build and serve
-
 
 ## Requirements
 
