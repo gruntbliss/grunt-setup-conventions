@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-contrib-cssmin/tasks/cssmin.js')(grunt);
 
     grunt.registerTask('devbliss-cssmin', function () {
-            grunt.task.run(['clean']);
+            grunt.task.run(['cssmin']);
         }
     );
 };

@@ -5,8 +5,6 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function () {
             grunt.task.run(['devbliss-wiredep',
                             'devbliss-clean',
-                            'devbliss-clean:dist',
-                            'devbliss-clean:e2eDist',
                             'devbliss-recess',
                             'devbliss-jshint',
                             'devbliss-useminPrepare',
