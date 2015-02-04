@@ -50,21 +50,21 @@
   ],
   "dependencies": {
     "grunt": "0.4.x",
-    "grunt-wiredep": "2.x",
     "grunt-connect-proxy": "0.1.x",
-    "grunt-contrib-clean": "0.5.x",
     "grunt-connect-rewrite": "0.2.x",
-    "grunt-contrib-connect": "0.5.x",
-    "grunt-contrib-watch": "0.5.x",
-    "grunt-recess": "0.7.x",
+    "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-concat": "0.5.x",
+    "grunt-contrib-connect": "0.5.x",
     "grunt-contrib-copy": "0.4.x",
+    "grunt-contrib-cssmin": "0.7.x",
     "grunt-contrib-htmlmin": "0.1.x",
-    "grunt-usemin": "2.x",
     "grunt-contrib-jshint": "0.7.x",
+    "grunt-contrib-watch": "0.5.x",
     "grunt-processhtml": "0.3.x",
+    "grunt-recess": "0.7.x",
     "grunt-rev": "0.1.x",
-    "jshint-stylish": "0.1.x",
-    "grunt-contrib-cssmin": "0.7.x"
+    "grunt-usemin": "2.x",
+    "grunt-wiredep": "2.x",
+    "jshint-stylish": "0.1.x"
   }
 }
