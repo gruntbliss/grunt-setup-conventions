@@ -71,6 +71,13 @@ module.exports = function (grunt) {
                         port: devblissOptions.testport,
                         base: ['.tmp', 'test', 'dist']
                     }
+                },
+
+                e2eApp: {
+                    options: {
+                        port: devblissOptions.testport,
+                        base: ['.tmp', 'test', 'app']
+                    }
                 }
             }
         };
