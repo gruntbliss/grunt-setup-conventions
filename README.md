@@ -1,4 +1,4 @@
-# grunt-devbliss v0.4.0-SNAPSHOT
+# grunt-devbliss v0.4.0
 
 > The Devbliss GRUNT Plugin
 
@@ -97,7 +97,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-01-29   v0.4.0   added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
+ * 2015-02-04   v0.4.0   added serve build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare changed package.json dependency format to comply with our node style guide
  * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
@@ -111,4 +111,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Wed Feb 04 2015 09:13:39.*
+*This file was generated on Wed Feb 04 2015 12:00:46.*

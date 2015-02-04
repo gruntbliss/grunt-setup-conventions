@@ -1,9 +1,10 @@
 v0.4.0:
-  date: 2015-01-29
+  date: 2015-02-04
   changes:
     - added serve build, devbliss-cssmin, default
     - added devbliss-clean, devbliss-rev, devbliss-processhtml
     - added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
+    - changed package.json dependency format to comply with our node style guide
 v0.3.4:
   date: 2015-01-28 
   changes:
