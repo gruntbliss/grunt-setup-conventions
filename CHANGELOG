@@ -2,6 +2,7 @@ v0.5.0-SNAPSHOT:
   date: 2015-02-04
   changes:
     - add optional targets for clean, copy and processHtml
+    - fix: copy font files, not only directories
     - changed package.json dependency format to comply with our node style guide
 v0.4.0:
   date: 2015-02-04
