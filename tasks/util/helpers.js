@@ -7,7 +7,13 @@ module.exports = (function helpers() {
     // This string is used for grunt task targets:
     // e.g.: grunt copy, grunt copy:dist
     function gruntTarget(target) {
-        return (target != null) ? ':' + target : '';
+        var targetString = '';
+
+        if (target != null) {
+            targetString = ':' + target;
+        }
+
+        return targetString;
     }
 
     return {
