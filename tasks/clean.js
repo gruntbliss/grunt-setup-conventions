@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-contrib-clean/tasks/clean.js')(grunt);
+    var helpers = require('./util/helpers.js');
 
     function loadConfig(grunt) {
         return {
@@ -48,9 +49,9 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-clean', function () {
+    grunt.registerTask('devbliss-clean', function (config) {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['clean']);
+            grunt.task.run(['clean' + helpers.gruntTarget(config)]);
         }
     );
 };
