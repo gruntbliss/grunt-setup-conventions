@@ -107,16 +107,19 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 - Karma or any other task doesn't work!
 
+```
   >> rm -rf node_modules/grunt-devbliss/node_modules/*
   >> npm install & bower install
+```
 
 - Karma still doesn't work and there were errors while npm install
 
   Make sure python27 is installed and selected:
 
+```
   >> sudo port select --set python python27
   >> npm install & bower install
-
+```
 
 
 
@@ -138,4 +141,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Feb 05 2015 10:30:45.*
+*This file was generated on Thu Feb 05 2015 10:46:58.*
