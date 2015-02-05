@@ -1,6 +1,7 @@
 v0.4.0-SNAPSHOT:
   date: 2015-01-29
   changes:
+    - added e2e and unittest tasks, uglify, small fixes
     - added serve, build, devbliss-cssmin, default
     - added devbliss-clean, devbliss-rev, devbliss-processhtml
     - added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare

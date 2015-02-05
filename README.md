@@ -58,9 +58,17 @@ grunt.initConfig({
 - `devbliss-useminPrepare`: prepare configuration for using minified files
 - `devbliss-usemin`: use minified files
 - `devbliss-cssmin`: use css minified files
+- `devbliss-karma`: karma test runner
+- `devbliss-protractor`: protractor test e2e test framework
+- `devbliss-uglify`: js uglifier
 
 - `build`: builds the project
 - `serve`: serves the project locally in your browser
+
+- `unit-test-app`: run unit tests on the app
+- `unit-test-dist`: run unit tests on the packaged app
+- `e2e-test-app`: run e2e tests on the app
+- `e2e-test-dist`: run e2e tests on the packaged app
 
 #### Requirements
 
@@ -80,6 +88,8 @@ my-npm-project
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
 |-- test/                       --> application test js files
+|-- test/protractor.conf.js     --> protractor configuration file for e2e tests
+|-- test/karma.conf.js          --> karma configuration file for unit tests
 |-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
@@ -93,11 +103,27 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 To recreate the README.MD just run `grunt build-contrib`.
 
+### Troubleshooting
+
+- Karma or any other task doesn't work!
+
+  >> rm -rf node_modules/grunt-devbliss/node_modules/*
+  >> npm install & bower install
+
+- Karma still doesn't work and there were errors while npm install
+
+  Make sure python27 is installed and selected:
+
+  >> sudo port select --set python python27
+  >> npm install & bower install
+
+
+
 
 
 ## Release History
 
- * 2015-01-29   v0.4.0-SNAPSHOT   added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
+ * 2015-01-29   v0.4.0-SNAPSHOT   added e2e and unittest tasks, uglify, small fixes added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
  * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
@@ -111,4 +137,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Feb 02 2015 15:33:27.*
+*This file was generated on Thu Feb 05 2015 10:24:50.*

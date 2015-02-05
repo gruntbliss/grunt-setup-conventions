@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 
                 js: {
                     files: ['app/**/*.js'],
-                    //tasks: ['jshint'],
+                    //tasks: ['devbliss-jshint'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
 
                 less: {
                     files: ['app/styles/less/**/*.less'],
-                    tasks: ['clean', 'recess'],
+                    tasks: ['devbliss-clean', 'devbliss-recess'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
 
                 gruntfile: {
                     files: ['Gruntfile.js'],
-                    tasks: ['jshint'],
+                    tasks: ['devbliss-jshint'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
