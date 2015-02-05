@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-processhtml/tasks/processhtml.js')(grunt);
+    var helpers = require('./util/helpers.js');
 
     function loadConfig(grunt) {
         return {
@@ -23,9 +24,9 @@ module.exports = function (grunt) {
         };
     }
 
-    grunt.registerTask('devbliss-processhtml', function () {
+    grunt.registerTask('devbliss-processhtml', function (config) {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['processhtml']);
+            grunt.task.run(['processhtml' + helpers.gruntTarget(config)]);
         }
     );
 };

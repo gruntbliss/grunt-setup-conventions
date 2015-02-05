@@ -1,4 +1,4 @@
-# grunt-devbliss v0.4.0-SNAPSHOT
+# grunt-devbliss v0.4.0
 
 > The Devbliss GRUNT Plugin
 
@@ -123,7 +123,8 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-01-29   v0.4.0-SNAPSHOT   added e2e and unittest tasks, uglify, small fixes added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
+ * 2015-02-04   v0.5.0-SNAPSHOT   add optional targets for clean, copy and processHtml [object Object] changed package.json dependency format to comply with our node style guide
+ * 2015-02-04   v0.4.0   added e2e and unittest tasks, uglify, small fixes added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
  * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
  * 2015-01-15   v0.3.2   fix configuration for proxies and rewrite rules
@@ -137,4 +138,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Feb 05 2015 10:24:50.*
+*This file was generated on Thu Feb 05 2015 10:30:45.*
