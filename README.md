@@ -95,7 +95,7 @@ my-npm-project
 |-- package.json
 ```
 
-To integrate the plugin into your new project please add this to your host projects Gruntfile.js
+To integrate the plugin into your new project please add this to your host projects `package.json`
 
 ```
   "scripts": {
@@ -149,4 +149,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Feb 06 2015 10:37:47.*
+*This file was generated on Fri Feb 06 2015 14:11:33.*
