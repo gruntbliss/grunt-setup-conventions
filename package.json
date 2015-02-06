@@ -59,12 +59,22 @@
     "grunt-contrib-cssmin": "0.7.x",
     "grunt-contrib-htmlmin": "0.1.x",
     "grunt-contrib-jshint": "0.7.x",
+    "grunt-contrib-uglify": "0.6.x",
     "grunt-contrib-watch": "0.5.x",
+    "grunt-karma": "0.10.x",
     "grunt-processhtml": "0.3.x",
+    "grunt-protractor-runner": "1.1.x",
     "grunt-recess": "0.7.x",
     "grunt-rev": "0.1.x",
     "grunt-usemin": "2.x",
     "grunt-wiredep": "2.x",
-    "jshint-stylish": "0.1.x"
+    "jshint-stylish": "0.1.x",
+    "karma-chrome-launcher": "0.1.x",
+    "karma-firefox-launcher": "0.1.x",
+    "karma-jasmine": "0.1.x",
+    "karma-junit-reporter": "0.2.x",
+    "karma-phantomjs-launcher": "0.1.x",
+    "karma-safari-launcher": "0.1.x",
+    "protractor": "1.2.x"
   }
 }

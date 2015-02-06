@@ -58,9 +58,17 @@ grunt.initConfig({
 - `devbliss-useminPrepare`: prepare configuration for using minified files
 - `devbliss-usemin`: use minified files
 - `devbliss-cssmin`: use css minified files
+- `devbliss-karma`: karma test runner
+- `devbliss-protractor`: protractor test e2e test framework
+- `devbliss-uglify`: js uglifier
 
 - `build`: builds the project
 - `serve`: serves the project locally in your browser
+
+- `unit-test-app`: run unit tests on the app
+- `unit-test-dist`: run unit tests on the packaged app
+- `e2e-test-app`: run e2e tests on the app
+- `e2e-test-dist`: run e2e tests on the packaged app
 
 #### Requirements
 
@@ -80,9 +88,19 @@ my-npm-project
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
 |-- test/                       --> application test js files
+|-- test/protractor.conf.js     --> protractor configuration file for e2e tests
+|-- test/karma.conf.js          --> karma configuration file for unit tests
 |-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
+```
+
+To integrate the plugin into your new project please add this to your host projects `package.json`
+
+```
+  "scripts": {
+    "postinstall": "node_modules/grunt-devbliss/node_modules/protractor/bin/webdriver-manager update"
+  }
 ```
 
 ### Local set up
@@ -93,11 +111,30 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 
 To recreate the README.MD just run `grunt build-contrib`.
 
+### Troubleshooting
+
+- Karma or any other task doesn't work!
+
+```
+  >> rm -rf node_modules/grunt-devbliss/node_modules/*
+  >> npm install
+```
+
+- Karma still doesn't work and there were errors while npm install
+
+  Make sure python27 is installed and selected:
+
+```
+  >> sudo port select --set python python27
+  >> npm install
+```
+
+
 
 
 ## Release History
 
- * 2015-02-04   v0.5.0-SNAPSHOT   changed package.json dependency format to comply with our node style guide
+ * 2015-02-04   v0.5.0-SNAPSHOT   added e2e and unittest tasks, uglify, small fixes add optional targets for clean, copy and processHtml [object Object] changed package.json dependency format to comply with our node style guide
  * 2015-02-04   v0.4.0   added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
  * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
  * 2015-01-19   v0.3.3   update documentation
@@ -112,4 +149,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Wed Feb 04 2015 13:38:19.*
+*This file was generated on Fri Feb 06 2015 14:11:33.*

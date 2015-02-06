@@ -12,12 +12,12 @@ module.exports = function (grunt) {
                             'devbliss-copy:font',
                             'devbliss-copy:img',
                             'devbliss-concat',
-            //              'uglify',
+            //              'devbliss-uglify',
                             'devbliss-cssmin',
                             'devbliss-copy:js',
                             'devbliss-rev:dist',
                             'devbliss-usemin',
-            //               'karma:dist',
+            //               'unit-test-dist',
             //               'e2e-test-dist',
                             'devbliss-htmlmin']);
         }

@@ -37,9 +37,17 @@ grunt.initConfig({
 - `devbliss-useminPrepare`: prepare configuration for using minified files
 - `devbliss-usemin`: use minified files
 - `devbliss-cssmin`: use css minified files
+- `devbliss-karma`: karma test runner
+- `devbliss-protractor`: protractor test e2e test framework
+- `devbliss-uglify`: js uglifier
 
 - `build`: builds the project
 - `serve`: serves the project locally in your browser
+
+- `unit-test-app`: run unit tests on the app
+- `unit-test-dist`: run unit tests on the packaged app
+- `e2e-test-app`: run e2e tests on the app
+- `e2e-test-dist`: run e2e tests on the packaged app
 
 ## Requirements
 
@@ -59,9 +67,19 @@ my-npm-project
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
 |-- test/                       --> application test js files
+|-- test/protractor.conf.js     --> protractor configuration file for e2e tests
+|-- test/karma.conf.js          --> karma configuration file for unit tests
 |-- dist/                       --> where the application is built
 |-- Gruntfile.js
 |-- package.json
+```
+
+To integrate the plugin into your new project please add this to your host projects `package.json`
+
+```
+  "scripts": {
+    "postinstall": "node_modules/grunt-devbliss/node_modules/protractor/bin/webdriver-manager update"
+  }
 ```
 
 # Local set up
@@ -71,3 +89,22 @@ To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/li
 # Recreate README.MD
 
 To recreate the README.MD just run `grunt build-contrib`.
+
+# Troubleshooting
+
+- Karma or any other task doesn't work!
+
+```
+  >> rm -rf node_modules/grunt-devbliss/node_modules/*
+  >> npm install
+```
+
+- Karma still doesn't work and there were errors while npm install
+
+  Make sure python27 is installed and selected:
+
+```
+  >> sudo port select --set python python27
+  >> npm install
+```
+
