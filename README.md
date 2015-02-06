@@ -95,6 +95,14 @@ my-npm-project
 |-- package.json
 ```
 
+To integrate the plugin into your new project please add this to your host projects Gruntfile.js
+
+```
+  "scripts": {
+    "postinstall": "node_modules/grunt-devbliss/node_modules/protractor/bin/webdriver-manager update"
+  }
+```
+
 ### Local set up
 
 To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.
@@ -141,4 +149,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Feb 05 2015 15:08:49.*
+*This file was generated on Fri Feb 06 2015 10:37:47.*
