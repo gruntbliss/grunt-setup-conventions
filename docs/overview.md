@@ -74,7 +74,7 @@ my-npm-project
 |-- package.json
 ```
 
-To integrate the plugin into your new project please add this to your host projects Gruntfile.js
+To integrate the plugin into your new project please add this to your host projects `package.json`
 
 ```
   "scripts": {
