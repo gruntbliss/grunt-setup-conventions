@@ -2,6 +2,7 @@ v0.5.1-SNAPSHOT:
   date: 2015-02-09
   changes:
     - fixed overview.md paths
+    - added possibility to specify addition rewrite rules in the project gruntfile
 v0.5.0:
   date: 2015-02-04
   changes:
