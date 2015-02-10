@@ -1,9 +1,10 @@
-v0.5.1-SNAPSHOT:
+v0.6.0:
   date: 2015-02-10
   changes:
     - fixed overview.md paths
     - added possibility to overwrite connect rewrite rules in the project gruntfile
     - changed order of rewrite rules and proxy config (proxy first) to make configuration easier
+    - added possibility to overwrite connect proxy rules in the project gruntfile
 v0.5.0:
   date: 2015-02-04
   changes:

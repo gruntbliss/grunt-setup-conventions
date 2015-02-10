@@ -134,7 +134,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-02-10   v0.5.1-SNAPSHOT   fixed overview.md paths added possibility to overwrite connect rewrite rules in the project gruntfile changed order of rewrite rules and proxy config (proxy first) to make configuration easier
+ * 2015-02-10   v0.6.0   fixed overview.md paths added possibility to overwrite connect rewrite rules in the project gruntfile changed order of rewrite rules and proxy config (proxy first) to make configuration easier added possibility to overwrite connect proxy rules in the project gruntfile
  * 2015-02-04   v0.5.0   added e2e and unittest tasks, uglify, small fixes add optional targets for clean, copy and processHtml [object Object] changed package.json dependency format to comply with our node style guide
  * 2015-02-04   v0.4.0   added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
  * 2015-01-28   v0.3.4   added devbliss-recess, devbliss-concat, devbliss-copy, devbliss-jshint added devbliss-watch refactored into modules
@@ -150,4 +150,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Tue Feb 10 2015 10:44:51.*
+*This file was generated on Tue Feb 10 2015 11:00:04.*
