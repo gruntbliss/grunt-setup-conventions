@@ -24,13 +24,11 @@ module.exports = function (grunt) {
             to: 'http://0.0.0.0:8082',
             redirect: 'permanent'
         }];
-        // get existing options to merge them
-        var connectOptions = grunt.config('connect');
+        // get existing options to overwrite the task rules with the project rules
+        var projectRules = grunt.config('connect.rules');
 
-        if (Array.isArray(connectOptions.rules)) {
-            connectOptions.rules.forEach(function(rule) {
-                rules.push(rule);
-            });
+        if (Array.isArray(projectRules)) {
+            rules = projectRules;
         }
 
         return {

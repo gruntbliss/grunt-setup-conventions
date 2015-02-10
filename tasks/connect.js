@@ -23,11 +23,12 @@ module.exports = function (grunt) {
                             options.base = [options.base];
                         }
 
+                        // Setup the proxy
+                        middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
+
                         // RewriteRules support
                         middlewares.push(rewriteRulesSnippet);
 
-                        // Setup the proxy
-                        middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
                         // Serve static files
                         options.base.forEach(function(base) {
                             middlewares.push(connect.static(base));
