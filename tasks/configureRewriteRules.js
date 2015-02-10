@@ -25,10 +25,10 @@ module.exports = function (grunt) {
             redirect: 'permanent'
         }];
         // get existing options to overwrite the task rules with the project rules
-        var connectOptions = grunt.config('connect');
+        var projectRules = grunt.config('connect.rules');
 
-        if (Array.isArray(connectOptions.rules)) {
-            rules = connectOptions.rules;
+        if (Array.isArray(projectRules)) {
+            rules = projectRules;
         }
 
         return {
