@@ -7,7 +7,9 @@ module.exports = function (grunt) {
 
     function loadConfig() {
         return {
-            // VALIDATE JS IN CASE OF CODE QUALITY
+            pkg: grunt.file.readJSON('tasks/util/jslint.json'),
+
+        // VALIDATE JS IN CASE OF CODE QUALITY
             jshint: {
                 files: [
                     'Gruntfile.js',
@@ -17,7 +19,8 @@ module.exports = function (grunt) {
                 ],
                 test: {
                     src: ['test/**/*.js']
-                }
+                },
+                options: '<%= pkg.options %>'
             }
         };
     }
