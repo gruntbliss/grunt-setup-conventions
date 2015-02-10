@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-processhtml/tasks/processhtml.js')(grunt);
     var helpers = require('./util/helpers.js');
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // PROCESSHTML: Build new index html for e2e run
             processhtml: {

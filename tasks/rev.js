@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-rev/tasks/rev.js')(grunt);
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // RENAME FILES FOR BROWSER CACHING PURPOSES
             rev: {

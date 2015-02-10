@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-contrib-clean/tasks/clean.js')(grunt);
     var helpers = require('./util/helpers.js');
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // CLEAN GENERATED FILES
             clean: {
