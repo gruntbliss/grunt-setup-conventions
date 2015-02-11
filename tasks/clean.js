@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-contrib-clean/tasks/clean.js')(grunt);
     var helpers = require('./util/helpers.js');
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // CLEAN GENERATED FILES
             clean: {
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-clean', function (config) {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['clean' + helpers.gruntTarget(config)]);
         }
     );

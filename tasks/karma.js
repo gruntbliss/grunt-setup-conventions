@@ -7,8 +7,7 @@ module.exports = function (grunt) {
     var helpers = require('./util/helpers.js');
 
     // Watches files for changes and runs tasks based on the changed files
-    function loadConfig(grunt) {
-        var devblissOptions = grunt.config('devbliss');
+    function loadConfig() {
         return {
             karma: {
                 options: {
@@ -44,7 +43,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-karma', function (config) {
-            grunt.config.init(helpers.mergeJSON(grunt.config.data, loadConfig(grunt), "karma"));
+            grunt.config.init(helpers.mergeJSON(grunt.config.data, loadConfig(), "karma"));
             grunt.task.run(['karma:'+config]);
         }
     );

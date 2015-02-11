@@ -1,4 +1,4 @@
-# grunt-devbliss v0.6.1
+# grunt-devbliss v0.7.0
 
 > The Devbliss GRUNT Plugin
 
@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-02-11   v0.7.0   added global jshint rules
  * 2015-02-10   v0.6.1   updated grunt-contrib-jshint version added a new config merge option and used it for the karma task only yet
  * 2015-02-10   v0.6.0   fixed overview.md paths added possibility to overwrite connect rewrite rules in the project gruntfile changed order of rewrite rules and proxy config (proxy first) to make configuration easier added possibility to overwrite connect proxy rules in the project gruntfile
  * 2015-02-04   v0.5.0   added e2e and unittest tasks, uglify, small fixes add optional targets for clean, copy and processHtml [object Object] changed package.json dependency format to comply with our node style guide
@@ -160,4 +161,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Wed Feb 11 2015 14:51:47.*
+*This file was generated on Wed Feb 11 2015 14:54:53.*

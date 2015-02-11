@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 
                 js: {
                     files: ['app/**/*.js'],
-                    //tasks: ['devbliss-jshint'],
+                    tasks: ['devbliss-jshint'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
