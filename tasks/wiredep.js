@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-wiredep/tasks/wiredep.js')(grunt);
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             wiredep: {
                 task: {
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-wiredep', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['wiredep']);
         }
     );

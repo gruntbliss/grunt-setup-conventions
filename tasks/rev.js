@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-rev/tasks/rev.js')(grunt);
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // RENAME FILES FOR BROWSER CACHING PURPOSES
             rev: {
@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-rev', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['rev']);
         }
     );

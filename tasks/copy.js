@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-contrib-copy/tasks/copy.js')(grunt);
     var helpers = require('./util/helpers.js');
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // COPYS FILES FROM APP TO DIST
             copy: {
@@ -61,7 +61,8 @@ module.exports = function (grunt) {
                             src: [
                                 'bower_components/ecosystem-main-frontend/release/images/**/*',
                                 'images/placeholder/*',
-                                'styles/img/**/*'],
+                                'styles/img/**/*'
+                            ],
                             dest: 'dist'
                         }
                     ]
@@ -84,7 +85,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-copy', function (config) {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['copy' + helpers.gruntTarget(config)]);
         }
     );
