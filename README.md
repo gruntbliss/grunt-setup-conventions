@@ -103,6 +103,15 @@ To integrate the plugin into your new project please add this to your host proje
   }
 ```
 
+### Additional config in your host projects Gruntfile.js
+
+The configuration in your Gruntfile.js of your host project will be used as an underlying configuration for most tasks.
+This means, that your projects configuration will be merged with the default configuration at runtime.
+The default configuration will overwrite your projects configuration on conflict.
+
+There are exceptions to this rule for devbliss-configureRewriteRules, devbliss-configureProxies and devbliss-karma.
+For those tasks the configuration of your host project will completely overwrite the default task-related configuration if present.
+
 ### Local set up
 
 To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.
@@ -134,7 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-02-10   v0.6.1   updated grunt-contrib-jshint version
+ * 2015-02-10   v0.6.1   updated grunt-contrib-jshint version added a new config merge option and used it for the karma task only yet
  * 2015-02-10   v0.6.0   fixed overview.md paths added possibility to overwrite connect rewrite rules in the project gruntfile changed order of rewrite rules and proxy config (proxy first) to make configuration easier added possibility to overwrite connect proxy rules in the project gruntfile
  * 2015-02-04   v0.5.0   added e2e and unittest tasks, uglify, small fixes add optional targets for clean, copy and processHtml [object Object] changed package.json dependency format to comply with our node style guide
  * 2015-02-04   v0.4.0   added serve, build, devbliss-cssmin, default added devbliss-clean, devbliss-rev, devbliss-processhtml added devbliss-htmlmin, devbliss-usemin, devbliss-useminPrepare
@@ -151,4 +160,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Tue Feb 10 2015 15:11:34.*
+*This file was generated on Wed Feb 11 2015 14:51:47.*
