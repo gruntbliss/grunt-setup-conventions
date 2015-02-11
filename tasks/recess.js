@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-recess/tasks/recess.js')(grunt);
 
-    function loadConfig(grunt) {
+    function loadConfig() {
         return {
             // CONVERT LESS TO CSS IN TEMPFOLDER
             recess: {
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-recess', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['recess']);
         }
     );
