@@ -1,3 +1,7 @@
+v0.8.0-SNAPSHOT:
+  date: 2015-02-11
+  changes:
+    - added a new config merge option and used it for the karma task only yet
 v0.7.0:
   date: 2015-02-11
   changes:
@@ -6,7 +10,6 @@ v0.6.1:
   date: 2015-02-10
   changes:
     - updated grunt-contrib-jshint version
-    - added a new config merge option and used it for the karma task only yet
 v0.6.0:
   date: 2015-02-10
   changes:
