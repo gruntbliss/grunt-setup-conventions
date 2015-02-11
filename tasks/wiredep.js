@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-wiredep', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['wiredep']);
         }
     );

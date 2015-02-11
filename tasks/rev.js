@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-rev', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['rev']);
         }
     );

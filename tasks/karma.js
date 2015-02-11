@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-karma', function (config) {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['karma:'+config]);
         }
     );

@@ -25,7 +25,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-processhtml', function (config) {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['processhtml' + helpers.gruntTarget(config)]);
         }
     );

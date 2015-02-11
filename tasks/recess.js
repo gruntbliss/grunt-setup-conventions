@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-recess', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['recess']);
         }
     );

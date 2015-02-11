@@ -71,7 +71,13 @@ module.exports = (function jsHintOptions() {
             'wsh': false,
             'yui': false,
             'globals': {
-                'angular': false
+                'angular': false,
+                'beforeEach': false,
+                'browser': false,
+                'by': false,
+                'expect': false,
+                'inject': false,
+                'protractor': false
             }
         }
     }

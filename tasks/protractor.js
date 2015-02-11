@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-protractor', function (config) {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['protractor:' + config]);
         }
     );

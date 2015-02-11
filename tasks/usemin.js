@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-useminPrepare', function () {
-            grunt.config.merge(loadUseMinPrepareConfig(grunt));
+            grunt.config.merge(loadUseMinPrepareConfig());
             grunt.task.run(['useminPrepare']);
         }
     );
