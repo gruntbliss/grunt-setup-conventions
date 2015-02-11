@@ -46,9 +46,9 @@ module.exports = function (grunt) {
     grunt.registerTask('devbliss-karma', function (config) {
 
 //            console.log(JSON.stringify(grunt.config.data, null, 4))
-//            var targetConfig = helpers.mergeJSON(grunt.config.data, loadConfig(grunt), "karma");
+            var targetConfig = helpers.mergeJSON(grunt.config.data, loadConfig(grunt), "karma");
 //            console.log(JSON.stringify(targetConfig, null, 4))
-//            grunt.config.init(targetConfig);
+            grunt.config.init(targetConfig);
             console.log(JSON.stringify(grunt.config.data, null, 4))
             grunt.task.run(['karma:'+config]);
         }

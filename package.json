@@ -68,12 +68,14 @@
     "grunt-usemin": "2.x",
     "grunt-wiredep": "2.x",
     "jshint-stylish": "0.1.x",
+    "karma": "^0.12.31",
     "karma-chrome-launcher": "0.1.x",
     "karma-firefox-launcher": "0.1.x",
     "karma-jasmine": "0.1.x",
     "karma-junit-reporter": "0.2.x",
     "karma-phantomjs-launcher": "0.1.x",
     "karma-safari-launcher": "0.1.x",
-    "protractor": "1.2.x"
+    "protractor": "1.2.x",
+    "karma-spec-reporter": "0.0.16"
   }
 }
