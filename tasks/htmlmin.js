@@ -31,7 +31,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-htmlmin', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['htmlmin']);
         }
     );

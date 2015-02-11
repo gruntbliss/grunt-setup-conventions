@@ -10,16 +10,18 @@
 
 module.exports = function (grunt) {
 
+    // External Dependencies import
+    var options = require('./tasks/util/jsHintGlobalOptions.js');
+
     // Project configuration.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('tasks/util/jslint.json'),
         jshint: {
             all: [
                 'Gruntfile.js',
                 'tasks/*.js',
                 '<%= nodeunit.tests %>'
             ],
-            options: '<%= pkg.options %>'
+            options: options.globalOptions
         },
 
         // Before generating any new files, remove any previously-created files.

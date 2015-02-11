@@ -4,11 +4,10 @@ module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-contrib-jshint/tasks/jshint.js')(grunt);
+    var options = require('./util/jsHintGlobalOptions');
 
     function loadConfig() {
         return {
-            pkg: grunt.file.readJSON('tasks/util/jslint.json'),
-
         // VALIDATE JS IN CASE OF CODE QUALITY
             jshint: {
                 files: [
@@ -20,13 +19,13 @@ module.exports = function (grunt) {
                 test: {
                     src: ['test/**/*.js']
                 },
-                options: '<%= pkg.options %>'
+                options: options.globalOptions
             }
         };
     }
 
     grunt.registerTask('devbliss-jshint', function () {
-            grunt.config.merge(loadConfig(grunt));
+            grunt.config.merge(loadConfig());
             grunt.task.run(['jshint']);
         }
     );
