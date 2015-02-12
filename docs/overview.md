@@ -82,6 +82,15 @@ To integrate the plugin into your new project please add this to your host proje
   }
 ```
 
+# Additional config in your host projects Gruntfile.js
+
+The configuration in your Gruntfile.js of your host project will be used as an underlying configuration for most tasks.
+This means, that your projects configuration will be merged with the default configuration at runtime.
+The default configuration will overwrite your projects configuration on conflict.
+
+There are exceptions to this rule for devbliss-configureRewriteRules, devbliss-configureProxies and devbliss-karma.
+For those tasks the configuration of your host project will completely overwrite the default task-related configuration if present.
+
 # Local set up
 
 To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.

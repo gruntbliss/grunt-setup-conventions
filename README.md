@@ -1,4 +1,4 @@
-# grunt-devbliss v0.7.0
+# grunt-devbliss v0.8.0
 
 > The Devbliss GRUNT Plugin
 
@@ -103,6 +103,15 @@ To integrate the plugin into your new project please add this to your host proje
   }
 ```
 
+### Additional config in your host projects Gruntfile.js
+
+The configuration in your Gruntfile.js of your host project will be used as an underlying configuration for most tasks.
+This means, that your projects configuration will be merged with the default configuration at runtime.
+The default configuration will overwrite your projects configuration on conflict.
+
+There are exceptions to this rule for devbliss-configureRewriteRules, devbliss-configureProxies and devbliss-karma.
+For those tasks the configuration of your host project will completely overwrite the default task-related configuration if present.
+
 ### Local set up
 
 To work on this plugin locally, use the [npm link](https://docs.npmjs.com/cli/link) feature.
@@ -134,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-02-12   v0.8.0   added a new config merge option and used it for the karma task only yet
  * 2015-02-11   v0.7.0   added global jshint rules
  * 2015-02-10   v0.6.1   updated grunt-contrib-jshint version
  * 2015-02-10   v0.6.0   fixed overview.md paths added possibility to overwrite connect rewrite rules in the project gruntfile changed order of rewrite rules and proxy config (proxy first) to make configuration easier added possibility to overwrite connect proxy rules in the project gruntfile
@@ -152,4 +162,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Wed Feb 11 2015 13:19:38.*
+*This file was generated on Thu Feb 12 2015 17:43:06.*

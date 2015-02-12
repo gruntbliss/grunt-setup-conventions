@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
     // External Dependencies import
     require('grunt-karma/tasks/grunt-karma.js')(grunt);
+    var helpers = require('./util/helpers.js');
 
     // Watches files for changes and runs tasks based on the changed files
     function loadConfig() {
@@ -42,7 +43,7 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-karma', function (config) {
-            grunt.config.merge(loadConfig());
+            grunt.config.init(helpers.mergeJSON(grunt.config.data, loadConfig(), "karma"));
             grunt.task.run(['karma:'+config]);
         }
     );
