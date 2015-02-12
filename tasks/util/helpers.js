@@ -18,7 +18,7 @@ module.exports = (function helpers() {
 
     // Merges two JSON Objects into one recursively
     // Overwrites same name attributes as long as they are not objects with more childs
-    // Overwrites obj2 with obj1
+    // Overwrites obj1 with obj2
     // Objects with the name of "overwriteAt" won't be merged but used from obj1 without checks (can be null)
     function mergeJSON(obj1, obj2, overwriteAt){
 
@@ -27,8 +27,10 @@ module.exports = (function helpers() {
         for (var attrname in obj1) {
             if(obj2copy.hasOwnProperty(attrname)) {
 
+                console.log(attrname+"_");
                 if( attrname == overwriteAt ) {
                     obj2copy[attrname] = obj1[attrname];
+                    console.log(attrname+"__");
                 }
 
                 if ( obj1[attrname]!=null && (typeof obj1[attrname])!==undefined && obj1[attrname].constructor==Object ) {
