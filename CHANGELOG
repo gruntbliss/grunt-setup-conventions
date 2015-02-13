@@ -1,3 +1,7 @@
+v0.8.1-SNAPSHOT:
+  date: 2015-02-13
+  changes:
+    - added some missing unittests
 v0.8.0:
   date: 2015-02-12
   changes:
