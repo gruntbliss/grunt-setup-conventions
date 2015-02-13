@@ -1,5 +1,5 @@
-v0.8.0-SNAPSHOT:
-  date: 2015-02-11
+v0.8.0:
+  date: 2015-02-12
   changes:
     - added a new config merge option and used it for the karma task only yet
 v0.7.0:

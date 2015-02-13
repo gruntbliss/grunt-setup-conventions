@@ -1,7 +1,7 @@
 {
   "name": "grunt-devbliss",
   "description": "The Devbliss GRUNT Plugin",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "homepage": "https://github.com/devbliss/ecosystem-grunt-plugin",
   "author": {
     "name": "Devbliss",
@@ -37,7 +37,6 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-internal": "0.4.x",
     "grunt-contrib-nodeunit": "0.3.x"
   },
@@ -68,9 +67,6 @@
     "grunt-usemin": "2.x",
     "grunt-wiredep": "2.x",
     "jshint-stylish": "0.1.x",
-    "jasmine": "2.1.x",
-    "jasmine-core": "2.1.x",
-    "karma": "0.12.x",
     "karma-chrome-launcher": "0.1.x",
     "karma-firefox-launcher": "0.1.x",
     "karma-jasmine": "0.2.x",
