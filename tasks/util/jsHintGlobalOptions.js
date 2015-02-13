@@ -22,7 +22,6 @@ module.exports = (function jsHintOptions() {
             'undef': true,
             'unused': true,
             'strict': true,
-            'maxparams': 3,
             'maxdepth': false,
             'maxstatements': false,
             'maxcomplexity': false,
@@ -71,6 +70,7 @@ module.exports = (function jsHintOptions() {
             'wsh': false,
             'yui': false,
             'globals': {
+                'X2JS': true,
                 'angular': false,
                 'beforeEach': false,
                 'browser': false,
