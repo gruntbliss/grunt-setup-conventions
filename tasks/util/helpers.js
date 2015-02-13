@@ -21,20 +21,16 @@ module.exports = (function helpers() {
     // Overwrites obj1 with obj2
     // Objects with the name of "overwriteAt" won't be merged but used from obj1 without checks (can be null)
     function mergeJSON(obj1, obj2, overwriteAt){
-
         var obj2copy = JSON.parse(JSON.stringify(obj2));
 
         for (var attrname in obj1) {
             if(obj2copy.hasOwnProperty(attrname)) {
-
-                console.log(attrname+"_");
                 if( attrname == overwriteAt ) {
                     obj2copy[attrname] = obj1[attrname];
-                    console.log(attrname+"__");
-                }
-
-                if ( obj1[attrname]!=null && (typeof obj1[attrname])!==undefined && obj1[attrname].constructor==Object ) {
-                    obj2copy[attrname] = mergeJSON(obj1[attrname], obj2copy[attrname]);
+                } else if ( obj1[attrname]!=null && (typeof obj1[attrname])!==undefined && obj1[attrname].constructor==Object ) {
+                    obj2copy[attrname] = mergeJSON(obj1[attrname], obj2copy[attrname], overwriteAt);
+                } else {
+                    obj2copy[attrname] = obj1[attrname];
                 }
             } else {
                 obj2copy[attrname] = obj1[attrname];

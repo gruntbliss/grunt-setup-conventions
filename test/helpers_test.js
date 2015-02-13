@@ -57,7 +57,7 @@ exports.devbliss = {
                     name131: "name131"
                 }
             }
-        }
+        };
 
         var object2 = {
             name1: {
@@ -71,9 +71,9 @@ exports.devbliss = {
                     name131: "nameXXX"
                 }
             }
-        }
+        };
 
-        var objectResult = {
+        var objectResult1 = {
             name1: {
                 cutout: {
                     cutout1: "cutout1"
@@ -86,11 +86,30 @@ exports.devbliss = {
                     name131: "name131"
                 }
             }
-        }
+        };
 
-        test.expect(1);
-        var actual = helpers.mergeJSON(object2, object1, "cutout");
-        test.equal(actual, objectResult, '');
+        var objectResult2 = {
+            name1: {
+                cutout: {
+                    cutout1: "cutout1",
+                    cutout2: "cutout2"
+                },
+                name12: {
+                    name122: "name122",
+                    name121: "name121"
+                },
+                name13: {
+                    name131: "name131"
+                }
+            }
+        };
+
+        test.expect(2);
+        var actual = helpers.mergeJSON(object1, object2, "cutout");
+        test.deepEqual(actual, objectResult1, 'The merged result must be the combination of the two input configs using a cutout.');
+
+        actual = helpers.mergeJSON(object1, object2, null);
+        test.deepEqual(actual, objectResult2, 'The merged result must be the combination of the two input configs without a cutout.');
 
         test.done();
     }
