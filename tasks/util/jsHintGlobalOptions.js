@@ -21,7 +21,7 @@ module.exports = (function jsHintOptions() {
             'quotmark': 'single',
             'undef': true,
             'unused': true,
-            'strict': true,
+            'strict': 'strict',
             'maxparams': 3,
             'maxdepth': false,
             'maxstatements': false,
