@@ -1,6 +1,7 @@
 v0.8.1-SNAPSHOT:
   date: 2015-02-13
   changes:
+    - removed function parameter limitation, added X2JS as global
     - added some missing unittests
 v0.8.0:
   date: 2015-02-12
