@@ -28,21 +28,19 @@ exports.devbliss = {
         done();
     },
     defaultOptions: function (test) {
+        var actual = grunt.file.read('tmp/defaultOptions'),
+            expected = grunt.file.read('test/expected/default_options');
+
         test.expect(1);
-
-        var actual = grunt.file.read('tmp/defaultOptions');
-        var expected = grunt.file.read('test/expected/default_options');
         test.equal(actual, expected, 'should describe what the default behavior is.');
-
         test.done();
     },
     customOptions: function (test) {
+        var actual = grunt.file.read('tmp/customOptions'),
+            expected = grunt.file.read('test/expected/custom_options');
+
         test.expect(1);
-
-        var actual = grunt.file.read('tmp/customOptions');
-        var expected = grunt.file.read('test/expected/custom_options');
         test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
-
         test.done();
-    },
+    }
 };
