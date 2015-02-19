@@ -13,7 +13,8 @@ module.exports = function (grunt) {
         grunt.task.run([
             'devbliss-clean:dist',
             'devbliss-wiredep',
-            'devbliss-configureProxies:server', // added just before connect
+            // added just before connect
+            'devbliss-configureProxies:server',
             'devbliss-configureRewriteRules',
             'devbliss-connect:app',
             'devbliss-watch'

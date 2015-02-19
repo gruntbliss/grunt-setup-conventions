@@ -1,4 +1,4 @@
-# grunt-devbliss v0.8.0
+# grunt-devbliss v0.9.0
 
 > The Devbliss GRUNT Plugin
 
@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-02-18   v0.9.0   removed function parameter limitation, added X2JS as global added some missing unittests renamed src in recess task from Base.less to base.less
  * 2015-02-12   v0.8.0   added a new config merge option and used it for the karma task only yet
  * 2015-02-11   v0.7.0   added global jshint rules
  * 2015-02-10   v0.6.1   updated grunt-contrib-jshint version
@@ -162,4 +163,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Thu Feb 12 2015 17:43:06.*
+*This file was generated on Wed Feb 18 2015 10:15:18.*

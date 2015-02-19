@@ -2,12 +2,18 @@
 
 module.exports = function (grunt) {
 
+    var helpers = require('./util/helpers.js'),
+        travis = 'chrome';
+
+    if (process.env.TRAVIS) {
+        travis = 'Firefox';
+    }
+
     // External Dependencies import
     require('grunt-karma/tasks/grunt-karma.js')(grunt);
-    var helpers = require('./util/helpers.js');
 
     // Watches files for changes and runs tasks based on the changed files
-    function loadConfig() {
+    function loadConfig () {
         return {
             karma: {
                 options: {
@@ -33,7 +39,7 @@ module.exports = function (grunt) {
                     ]
                 },
                 app: {
-                    browsers: [process.env.TRAVIS ? 'Firefox' : 'Chrome', 'PhantomJS']
+                    browsers: [travis, 'PhantomJS']
                 },
                 dist: {
                     browsers: ['PhantomJS']
@@ -43,8 +49,8 @@ module.exports = function (grunt) {
     }
 
     grunt.registerTask('devbliss-karma', function (config) {
-            grunt.config.init(helpers.mergeJSON(grunt.config.data, loadConfig(), "karma"));
-            grunt.task.run(['karma:'+config]);
+            grunt.config.init(helpers.mergeJSON(grunt.config.data, loadConfig(), 'karma'));
+            grunt.task.run(['karma:' + config]);
         }
     );
 };

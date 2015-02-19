@@ -10,18 +10,17 @@
 
 module.exports = function (grunt) {
 
-    // External Dependencies import
-    var options = require('./tasks/util/jsHintGlobalOptions.js');
-
     // Project configuration.
     grunt.initConfig({
-        jshint: {
-            all: [
+        eslint: {
+            target: [
                 'Gruntfile.js',
-                'tasks/*.js',
+                'tasks/**/*.js',
                 '<%= nodeunit.tests %>'
             ],
-            options: options.globalOptions
+            options: {
+                configFile: './tasks/util/eslint.json'
+            }
         },
 
         // Before generating any new files, remove any previously-created files.
@@ -34,7 +33,10 @@ module.exports = function (grunt) {
             defaultOptions: {
                 options: {},
                 files: {
-                    'tmp/defaultOptions': ['test/fixtures/testing', 'test/fixtures/123']
+                    'tmp/defaultOptions': [
+                        'test/fixtures/testing',
+                        'test/fixtures/123'
+                    ]
                 }
             },
             customOptions: {
@@ -43,7 +45,10 @@ module.exports = function (grunt) {
                     punctuation: ' !!!'
                 },
                 files: {
-                    'tmp/customOptions': ['test/fixtures/testing', 'test/fixtures/123']
+                    'tmp/customOptions': [
+                        'test/fixtures/testing',
+                        'test/fixtures/123'
+                    ]
                 }
             }
         },
@@ -61,7 +66,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-internal');
 
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
@@ -70,6 +74,6 @@ module.exports = function (grunt) {
     grunt.registerTask('test', ['clean', 'devbliss', 'nodeunit']);
 
     // By default, lint and run all tests.
-    grunt.registerTask('default', ['jshint', 'test']);
+    grunt.registerTask('default', ['eslint', 'test']);
 
 };

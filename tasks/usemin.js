@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-usemin/tasks/usemin.js')(grunt);
 
-    function loadUseMinConfig() {
+    function loadUseMinConfig () {
 
         return {
             // Performs rewrites based on rev and the useminPrepare configuration
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         }
     );
 
-    function loadUseMinPrepareConfig() {
+    function loadUseMinPrepareConfig () {
 
         return {
             // Reads HTML for usemin blocks to enable smart builds that automatically
