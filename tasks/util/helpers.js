@@ -34,7 +34,7 @@ module.exports = (function helpers () {
                     obj2copy[attrname] = obj1[attrname];
                 }
 
-                if (obj1[attrname] !== null && (obj1[attrname]) && obj1[attrname].constructor === Object) {
+                if (obj1[attrname] !== null && (typeof obj1[attrname]) !== undefined && obj1[attrname].constructor === Object) {
                     obj2copy[attrname] = mergeJSON(obj1[attrname], obj2copy[attrname]);
                 }
             } else {
