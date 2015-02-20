@@ -2,11 +2,12 @@
 
 module.exports = function (grunt) {
 
-    // External Dependencies import
-    require('grunt-processhtml/tasks/processhtml.js')(grunt);
     var helpers = require('./util/helpers.js');
 
-    function loadConfig() {
+    // External Dependencies import
+    require('grunt-processhtml/tasks/processhtml.js')(grunt);
+
+    function loadConfig () {
         return {
             // PROCESSHTML: Build new index html for e2e run
             processhtml: {

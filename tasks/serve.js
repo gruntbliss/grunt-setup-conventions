@@ -14,7 +14,8 @@ module.exports = function (grunt) {
             'devbliss-clean:dist',
             'devbliss-wiredep',
             'devbliss-recess',
-            'devbliss-configureProxies:server', // added just before connect
+            // added just before connect
+            'devbliss-configureProxies:server',
             'devbliss-configureRewriteRules',
             'devbliss-connect:app',
             'devbliss-watch'

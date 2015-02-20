@@ -2,14 +2,14 @@
 
 module.exports = function (grunt) {
 
-    function loadConfig(grunt) {
+    function loadConfig () {
+
+        var devblissOptions = grunt.config('devbliss'),
+            rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
 
         // External Dependencies import
         require('grunt-connect-rewrite/tasks/connect_rewrite.js')(grunt);
         require('grunt-contrib-connect/tasks/connect.js')(grunt);
-
-        var rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;
-        var devblissOptions = grunt.config('devbliss');
 
         return {
             connect: {
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     hostname: '0.0.0.0',
                     middleware: function(connect, options) {
                         var middlewares = [];
-                        if (!Array.isArray(options.base)) {
+                        if (! Array.isArray(options.base)) {
                             options.base = [options.base];
                         }
 
@@ -86,7 +86,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('devbliss-connect', function (config) {
             grunt.config.merge(loadConfig(grunt));
-            grunt.task.run(['connect:'+config]);
+            grunt.task.run(['connect:' + config]);
         }
     );
 };

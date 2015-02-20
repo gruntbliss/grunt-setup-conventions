@@ -27,7 +27,7 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
-- `devbliss-jshint`: validate js code quality
+- `devbliss-eslint`: validate js code quality
 - `devbliss-copy`: copy files from app to dist
 - `devbliss-concat`: join files
 - `devbliss-clean`: remove generated files

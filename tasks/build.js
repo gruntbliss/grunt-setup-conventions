@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             grunt.task.run(['devbliss-wiredep',
                             'devbliss-clean',
                             'devbliss-recess',
-                            'devbliss-jshint',
+                            'devbliss-eslint',
                             'devbliss-useminPrepare',
                             'devbliss-copy:components',
                             'devbliss-copy:font',

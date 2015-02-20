@@ -3,14 +3,13 @@
 module.exports = function (grunt) {
 
     // External Dependencies import
-    require('grunt-contrib-jshint/tasks/jshint.js')(grunt);
-    var options = require('./util/jsHintGlobalOptions');
+    require('grunt-eslint/tasks/eslint.js')(grunt);
 
-    function loadConfig() {
+    function loadConfig () {
         return {
         // VALIDATE JS IN CASE OF CODE QUALITY
-            jshint: {
-                files: [
+            eslint: {
+                target: [
                     'Gruntfile.js',
                     'app/scripts/**/*.js',
                     'app/app_components/**/*.js',
@@ -19,14 +18,16 @@ module.exports = function (grunt) {
                 test: {
                     src: ['test/**/*.js']
                 },
-                options: options.globalOptions
+                options: {
+                    configFile: 'node_modules/grunt-devbliss/tasks/util/eslint.json'
+                }
             }
         };
     }
 
-    grunt.registerTask('devbliss-jshint', function () {
+    grunt.registerTask('devbliss-eslint', function () {
             grunt.config.merge(loadConfig());
-            grunt.task.run(['jshint']);
+            grunt.task.run(['eslint']);
         }
     );
 };

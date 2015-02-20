@@ -1,4 +1,4 @@
-# grunt-devbliss v0.9.1
+# grunt-devbliss v0.10.0
 
 > The Devbliss GRUNT Plugin
 
@@ -48,7 +48,7 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
-- `devbliss-jshint`: validate js code quality
+- `devbliss-eslint`: validate js code quality
 - `devbliss-copy`: copy files from app to dist
 - `devbliss-concat`: join files
 - `devbliss-clean`: remove generated files
@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-02-20   v0.10.0   use eslint instead of jshint for style rules checks
  * 2015-02-20   v0.9.1   added recess task to serve task
  * 2015-02-18   v0.9.0   removed function parameter limitation, added X2JS as global added some missing unittests renamed src in recess task from Base.less to base.less
  * 2015-02-12   v0.8.0   added a new config merge option and used it for the karma task only yet
@@ -164,4 +165,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Feb 20 2015 16:37:15.*
+*This file was generated on Fri Feb 20 2015 17:07:50.*
