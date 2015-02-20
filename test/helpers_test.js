@@ -73,14 +73,15 @@ exports.devbliss = {
             objectResult1 = {
                 name1: {
                     cutout: {
-                        cutout1: 'cutout1'
+                        cutout1: 'cutout1',
+                        cutout2: 'cutout2'
                     },
                     name12: {
                         name121: 'name121',
                         name122: 'name122'
                     },
                     name13: {
-                        name131: 'name131'
+                        name131: 'nameXXX'
                     }
                 }
             },
@@ -95,7 +96,7 @@ exports.devbliss = {
                         name121: 'name121'
                     },
                     name13: {
-                        name131: 'name131'
+                        name131: 'nameXXX'
                     }
                 }
             },
