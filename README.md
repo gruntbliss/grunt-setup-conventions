@@ -48,7 +48,7 @@ grunt.initConfig({
 - `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
-- `devbliss-jshint`: validate js code quality
+- `devbliss-eslint`: validate js code quality
 - `devbliss-copy`: copy files from app to dist
 - `devbliss-concat`: join files
 - `devbliss-clean`: remove generated files
@@ -163,4 +163,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Wed Feb 18 2015 10:15:18.*
+*This file was generated on Fri Feb 20 2015 15:50:11.*
