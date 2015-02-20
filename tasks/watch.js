@@ -6,15 +6,13 @@ module.exports = function (grunt) {
     require('grunt-contrib-watch/tasks/watch.js')(grunt);
 
     // Watches files for changes and runs tasks based on the changed files
-    function loadConfig(grunt) {
+    function loadConfig () {
         var devblissOptions = grunt.config('devbliss');
         return {
             // Watches files for changes and runs tasks based on the changed files
             watch: {
 
-                ///////////////////////
                 // application files
-                ////////
 
                 html: {
                     files: ['app/**/*.html'],
@@ -25,7 +23,7 @@ module.exports = function (grunt) {
 
                 js: {
                     files: ['app/**/*.js'],
-                    tasks: ['devbliss-jshint'],
+                    tasks: ['devbliss-eslint'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
@@ -46,22 +44,14 @@ module.exports = function (grunt) {
                     }
                 },
 
-                ///////////////////////
-
-                ///////////////////////
                 // tests
-                ////////
 
                 jsTest: {
                     files: ['test/**/*.js'],
-                    tasks: ['jshint:test']
+                    tasks: ['eslint:test']
                 },
 
-                ///////////////////////
-
-                ///////////////////////
                 // setup
-                ////////
 
                 bower: {
                     files: ['bower.json'],
@@ -71,12 +61,11 @@ module.exports = function (grunt) {
 
                 gruntfile: {
                     files: ['Gruntfile.js'],
-                    tasks: ['devbliss-jshint'],
+                    tasks: ['devbliss-eslint'],
                     options: {
                         livereload: devblissOptions.livereload
                     }
                 }
-                ///////////////////////
             }
         };
     }

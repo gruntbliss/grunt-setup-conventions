@@ -3,10 +3,10 @@
 module.exports = function (grunt) {
 
     // External Dependencies import
-    require('grunt-contrib-clean/tasks/clean.js')(grunt);
     var helpers = require('./util/helpers.js');
+    require('grunt-contrib-clean/tasks/clean.js')(grunt);
 
-    function loadConfig() {
+    function loadConfig () {
         return {
             // CLEAN GENERATED FILES
             clean: {
