@@ -158,7 +158,7 @@
         "vars-on-top": 2,
         "wrap-iife": 2,
         "wrap-regex": 2,
-        "yoda": [2, "never", { "exceptRange": true }],
+        "yoda": [2, "never", { "exceptRange": true }]
     },
     "globals": {
       "angular": true,
