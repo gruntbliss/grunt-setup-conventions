@@ -138,7 +138,7 @@
         "radix": 2,
         "semi": 2,
         "sort-vars": 0,
-        "space-after-function-name": [0, "never"],
+        "space-after-function-name": [2, "never"],
         "space-after-keywords": [2, "always"],
         "space-before-blocks": [2, "always"],
         "space-in-brackets": [0, "always"],
