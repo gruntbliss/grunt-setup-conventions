@@ -1,3 +1,7 @@
+v0.10.1:
+  date: 2015-02-23
+  changes:
+    - fixed eslint helper methods based of new rules
 v0.10.0:
   date: 2015-02-20
   changes:

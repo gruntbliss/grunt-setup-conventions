@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-eslint/tasks/eslint.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
         return {
         // VALIDATE JS IN CASE OF CODE QUALITY
             eslint: {

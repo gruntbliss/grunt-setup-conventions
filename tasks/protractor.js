@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-protractor-runner/tasks/protractor_runner.js')(grunt);
 
 
-    function loadConfig () {
+    function loadConfig() {
         return {
             // PROTRACTOR: LIBRARY FOR END TO END TESTS
             protractor: {

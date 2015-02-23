@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-contrib-copy/tasks/copy.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
         return {
             // COPYS FILES FROM APP TO DIST
             copy: {

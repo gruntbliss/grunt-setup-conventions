@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
 
         // get existing options to overwrite the task rules with the project rules
         var projectProxies = grunt.config('connect.proxies'),

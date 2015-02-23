@@ -2,7 +2,7 @@
 
 module.exports = function (grunt) {
 
-    function loadConfig () {
+    function loadConfig() {
 
         var devblissOptions = grunt.config('devbliss'),
             rewriteRulesSnippet = require('grunt-connect-rewrite/lib/utils').rewriteRequest;

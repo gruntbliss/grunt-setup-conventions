@@ -1,4 +1,4 @@
-# grunt-devbliss v0.10.0
+# grunt-devbliss v0.10.1
 
 > The Devbliss GRUNT Plugin
 
@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-02-23   v0.10.1   fixed eslint helper methods based of new rules
  * 2015-02-20   v0.10.0   use eslint instead of jshint for style rules checks
  * 2015-02-20   v0.9.1   added recess task to serve task
  * 2015-02-18   v0.9.0   removed function parameter limitation, added X2JS as global added some missing unittests renamed src in recess task from Base.less to base.less
@@ -165,4 +166,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Feb 20 2015 17:07:50.*
+*This file was generated on Mon Feb 23 2015 11:35:33.*
