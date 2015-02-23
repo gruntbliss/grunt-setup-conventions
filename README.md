@@ -1,4 +1,4 @@
-# grunt-devbliss v0.10.0
+# grunt-devbliss v0.10.1
 
 > The Devbliss GRUNT Plugin
 
@@ -166,4 +166,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Feb 23 2015 11:17:19.*
+*This file was generated on Mon Feb 23 2015 11:35:33.*
