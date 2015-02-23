@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-connect-rewrite/tasks/connect_rewrite.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
         // get existing options to overwrite the task rules with the project rules
         var projectRules = grunt.config('connect.rules'),
         // configuration for the task configureRewriteRules from plugin grunt-connect-rewrite

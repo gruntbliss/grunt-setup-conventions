@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-wiredep/tasks/wiredep.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
         return {
             wiredep: {
                 task: {

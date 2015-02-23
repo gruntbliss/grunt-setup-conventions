@@ -11,7 +11,7 @@ module.exports = (function helpers () {
     function gruntTarget (target) {
         var targetString = '';
 
-        if (target !== null) {
+        if (target) {
             targetString = ':' + target;
         }
 

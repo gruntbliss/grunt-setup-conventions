@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     // External Dependencies import
     require('grunt-contrib-htmlmin/tasks/htmlmin.js')(grunt);
 
-    function loadConfig () {
+    function loadConfig() {
         // MINIFI TEMP HTML AND MOVE IT TO DIST FOLDER
         return {
             htmlmin: {

@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     require('grunt-contrib-watch/tasks/watch.js')(grunt);
 
     // Watches files for changes and runs tasks based on the changed files
-    function loadConfig () {
+    function loadConfig() {
         var devblissOptions = grunt.config('devbliss');
         return {
             // Watches files for changes and runs tasks based on the changed files
