@@ -2,6 +2,10 @@ v0.10.0:
   date: 2015-02-20
   changes:
     - use eslint instead of jshint for style rules checks
+v0.9.1:
+  date: 2015-02-20
+  changes:
+    - added recess task to serve task
 v0.9.0:
   date: 2015-02-18
   changes:
