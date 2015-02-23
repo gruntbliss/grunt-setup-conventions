@@ -144,6 +144,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 ## Release History
 
  * 2015-02-20   v0.10.0   use eslint instead of jshint for style rules checks
+ * 2015-02-20   v0.9.1   added recess task to serve task
  * 2015-02-18   v0.9.0   removed function parameter limitation, added X2JS as global added some missing unittests renamed src in recess task from Base.less to base.less
  * 2015-02-12   v0.8.0   added a new config merge option and used it for the karma task only yet
  * 2015-02-11   v0.7.0   added global jshint rules
