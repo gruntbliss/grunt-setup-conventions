@@ -47,6 +47,7 @@ module.exports = function (grunt) {
                             cwd: 'app',
                             src: [
                                 'styles/css/bootstrap/fonts/**/*',
+                                'styles/fonts/**/*',
                                 'bower_components/ecosystem-main-frontend/release/styles/bootstrap/fonts/**/*'
                             ],
                             dest: 'dist'
