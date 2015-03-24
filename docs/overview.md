@@ -63,6 +63,7 @@ my-npm-project
 |   -- scripts/                 --> more js scripts
 |   -- styles/                  --> css files reside here
 |   -- views/                   --> views outside any module
+|   -- styles/fonts/            --> where the applications font files are
 |   -- styles/less/             --> where the applications less files are
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html

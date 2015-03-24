@@ -1,3 +1,7 @@
+v0.10.2:
+  date: 2015-03-24
+  changes:
+    - added app/styles/fonts to copy task
 v0.10.1:
   date: 2015-02-23
   changes:
