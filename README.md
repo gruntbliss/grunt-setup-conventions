@@ -1,4 +1,4 @@
-# grunt-devbliss v0.10.1
+# grunt-devbliss v0.10.2
 
 > The Devbliss GRUNT Plugin
 
