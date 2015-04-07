@@ -116,7 +116,7 @@
         "eol-last": 2,
         "eqeqeq": 2,
         "func-names": 0,
-        "func-style": [2, "declaration"],
+        "func-style": [1, "declaration"],
         "generator-star": 0,
         "global-strict": [2, "always"],
         "guard-for-in": 2,
