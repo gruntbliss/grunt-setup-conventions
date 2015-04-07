@@ -161,10 +161,22 @@
         "yoda": [2, "never", { "exceptRange": true }]
     },
     "globals": {
+      "after": false,
+      "afterEach": false,
       "angular": true,
-      "browser": true,
-      "inject": true
-
+      "before": false,
+      "beforeEach": true,
+      "browser": false,
+      "by":true,
+      "describe": false,
+      "devbliss": true,
+      "element":true,
+      "expect": false,
+      "inject": false,
+      "it": false,
+      "jasmine": false,
+      "protractor": true,
+      "spyOn": false
     }
 
 }
