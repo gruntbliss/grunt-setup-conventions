@@ -1,3 +1,7 @@
+v0.10.3:
+  date: 2015-04-07
+  changes:
+    - allow eslint globals for protractor and contract tests
 v0.10.2:
   date: 2015-03-24
   changes:

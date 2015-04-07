@@ -84,6 +84,7 @@ my-npm-project
 |   -- scripts/                 --> more js scripts
 |   -- styles/                  --> css files reside here
 |   -- views/                   --> views outside any module
+|   -- styles/fonts/            --> where the applications font files are
 |   -- styles/less/             --> where the applications less files are
 |   -- styles/less/Base.less    --> base less file if less is used
 |   -- index.html
@@ -143,6 +144,8 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
+ * 2015-03-24   v0.10.2   added app/styles/fonts to copy task
  * 2015-02-23   v0.10.1   fixed eslint helper methods based of new rules
  * 2015-02-20   v0.10.0   use eslint instead of jshint for style rules checks
  * 2015-02-20   v0.9.1   added recess task to serve task
@@ -166,4 +169,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon Feb 23 2015 11:35:33.*
+*This file was generated on Tue Apr 07 2015 16:37:36.*
