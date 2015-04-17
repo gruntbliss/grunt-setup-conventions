@@ -1,6 +1,6 @@
-# grunt-devbliss v0.10.2
+# grunt-devbliss-conventions v1.0.0
 
-> The Devbliss GRUNT Plugin
+> The Devbliss Grunt conventions plugin.
 
 
 
@@ -10,16 +10,16 @@ This plugin requires Grunt `0.4.x`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-devbliss --save-dev
+npm install grunt-devbliss-conventions --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-devbliss');
+grunt.loadNpmTasks('grunt-devbliss-conventions');
 ```
 
-### The "grunt-devbliss" tasks
+### The "grunt-devbliss-conventions" tasks
 
 #### Overview
 In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
@@ -78,7 +78,6 @@ To be able to use the tasks, your project must have the following structure:
 my-npm-project
 |-- app/                        --> where the application files are (html, js, css)
 |   -- bower_components/        --> bower dependencies
-|   -- bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
 |   -- app_dev_components/  --> development only components
 |   -- scripts/                 --> more js scripts
@@ -100,7 +99,7 @@ To integrate the plugin into your new project please add this to your host proje
 
 ```
   "scripts": {
-    "postinstall": "node_modules/grunt-devbliss/node_modules/protractor/bin/webdriver-manager update"
+    "postinstall": "node_modules/grunt-devbliss-conventions/node_modules/protractor/bin/webdriver-manager update"
   }
 ```
 
@@ -126,7 +125,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 - Karma or any other task doesn't work!
 
 ```
-  >> rm -rf node_modules/grunt-devbliss/node_modules/*
+  >> rm -rf node_modules/grunt-devbliss-conventions/node_modules/*
   >> npm install
 ```
 
@@ -144,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-05-17   v1.0.0   rename plugin to grunt-devbliss-conventions
  * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
  * 2015-03-24   v0.10.2   added app/styles/fonts to copy task
  * 2015-02-23   v0.10.1   fixed eslint helper methods based of new rules
@@ -169,4 +169,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Tue Apr 07 2015 16:37:36.*
+*This file was generated on Fri Apr 17 2015 16:27:25.*

@@ -1,8 +1,8 @@
 {
-  "name": "grunt-devbliss",
-  "description": "The Devbliss GRUNT Plugin",
-  "version": "0.10.2",
-  "homepage": "https://github.com/devbliss/ecosystem-grunt-plugin",
+  "name": "grunt-devbliss-conventions",
+  "description": "The Devbliss Grunt conventions plugin.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/devbliss/grunt-devbliss-conventions",
   "author": {
     "name": "Devbliss",
     "email": "http://www.devbliss.com",
@@ -10,24 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com:devbliss/ecosystem-grunt-plugin.git"
+    "url": "git@github.com:devbliss/grunt-devbliss-conventions.git"
   },
   "bugs": {
-    "url": "https://github.com/devbliss/ecosystem-grunt-plugin/issues"
+    "url": "https://github.com/devbliss/grunt-devbliss-conventions/issues"
   },
   "main": "Gruntfile.js",
   "licenses": [
     {
-      "type": "Apache",
-      "url": "https://github.com/devbliss/ecosystem-grunt-plugin/blob/master/LICENSE-Apache"
-    },
-    {
-      "type": "License",
-      "url": "https://github.com/devbliss/ecosystem-grunt-plugin/blob/master/LICENSE-License"
-    },
-    {
-      "type": "2.0",
-      "url": "https://github.com/devbliss/ecosystem-grunt-plugin/blob/master/LICENSE-2.0"
+      "type": "Apache License",
+      "url": "https://github.com/devbliss/grunt-devbliss-conventions/blob/master/LICENSE"
     }
   ],
   "engines": {
