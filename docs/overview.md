@@ -57,7 +57,6 @@ To be able to use the tasks, your project must have the following structure:
 my-npm-project
 |-- app/                        --> where the application files are (html, js, css)
 |   -- bower_components/        --> bower dependencies
-|   -- bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
 |   -- app_dev_components/  --> development only components
 |   -- scripts/                 --> more js scripts

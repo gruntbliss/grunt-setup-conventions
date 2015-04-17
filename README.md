@@ -1,6 +1,6 @@
-# grunt-devbliss v0.10.2
+# devbliss-grunt-conventions v0.10.3
 
-> The Devbliss GRUNT Plugin
+> The Devbliss Grunt conventions plugin.
 
 
 
@@ -10,13 +10,13 @@ This plugin requires Grunt `0.4.x`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-devbliss --save-dev
+npm install devbliss-grunt-conventions --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-devbliss');
+grunt.loadNpmTasks('devbliss-grunt-conventions');
 ```
 
 ### The "grunt-devbliss" tasks
@@ -78,7 +78,6 @@ To be able to use the tasks, your project must have the following structure:
 my-npm-project
 |-- app/                        --> where the application files are (html, js, css)
 |   -- bower_components/        --> bower dependencies
-|   -- bower_components/ecosystem-main-frontend/ --> main frontend include
 |   -- app_components/          --> modules of the app itself
 |   -- app_dev_components/  --> development only components
 |   -- scripts/                 --> more js scripts
@@ -169,4 +168,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Tue Apr 07 2015 16:37:36.*
+*This file was generated on Fri Apr 17 2015 14:57:45.*
