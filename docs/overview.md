@@ -78,7 +78,7 @@ To integrate the plugin into your new project please add this to your host proje
 
 ```
   "scripts": {
-    "postinstall": "node_modules/grunt-devbliss/node_modules/protractor/bin/webdriver-manager update"
+    "postinstall": "node_modules/grunt-devbliss-conventions/node_modules/protractor/bin/webdriver-manager update"
   }
 ```
 
@@ -104,7 +104,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 - Karma or any other task doesn't work!
 
 ```
-  >> rm -rf node_modules/grunt-devbliss/node_modules/*
+  >> rm -rf node_modules/grunt-devbliss-conventions/node_modules/*
   >> npm install
 ```
 

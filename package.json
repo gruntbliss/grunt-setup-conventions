@@ -1,8 +1,8 @@
 {
-  "name": "devbliss-grunt-conventions",
+  "name": "grunt-devbliss-conventions",
   "description": "The Devbliss Grunt conventions plugin.",
   "version": "1.0.0",
-  "homepage": "https://github.com/devbliss/devbliss-grunt-conventions",
+  "homepage": "https://github.com/devbliss/grunt-devbliss-conventions",
   "author": {
     "name": "Devbliss",
     "email": "http://www.devbliss.com",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:devbliss/devbliss-grunt-conventions.git"
+    "url": "git@github.com:devbliss/grunt-devbliss-conventions.git"
   },
   "bugs": {
-    "url": "https://github.com/devbliss/devbliss-grunt-conventions/issues"
+    "url": "https://github.com/devbliss/grunt-devbliss-conventions/issues"
   },
   "main": "Gruntfile.js",
   "licenses": [
     {
       "type": "Apache License",
-      "url": "https://github.com/devbliss/devbliss-grunt-conventions/blob/master/LICENSE"
+      "url": "https://github.com/devbliss/grunt-devbliss-conventions/blob/master/LICENSE"
     }
   ],
   "engines": {
