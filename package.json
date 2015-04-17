@@ -1,7 +1,7 @@
 {
   "name": "devbliss-grunt-conventions",
   "description": "The Devbliss Grunt conventions plugin.",
-  "version": "0.10.3",
+  "version": "1.0.0",
   "homepage": "https://github.com/devbliss/devbliss-grunt-conventions",
   "author": {
     "name": "Devbliss",
