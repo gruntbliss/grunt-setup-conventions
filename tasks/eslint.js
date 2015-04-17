@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     src: ['test/**/*.js']
                 },
                 options: {
-                    configFile: 'node_modules/grunt-devbliss/tasks/util/eslint.json'
+                    configFile: 'node_modules/grunt-devbliss-conventions/tasks/util/eslint.json'
                 }
             }
         };
