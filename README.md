@@ -1,4 +1,4 @@
-# devbliss-grunt-conventions v0.10.3
+# devbliss-grunt-conventions v1.0.0
 
 > The Devbliss Grunt conventions plugin.
 
@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-05-17   v1.0.0   rename plugin to devbliss-grunt-conventions
  * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
  * 2015-03-24   v0.10.2   added app/styles/fonts to copy task
  * 2015-02-23   v0.10.1   fixed eslint helper methods based of new rules
@@ -168,4 +169,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 17 2015 14:57:45.*
+*This file was generated on Fri Apr 17 2015 15:02:52.*
