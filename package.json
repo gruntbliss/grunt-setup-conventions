@@ -19,7 +19,7 @@
   "licenses": [
     {
       "type": "Apache License",
-      "url": "https://github.com/devbliss/ecosystem-grunt-plugin/blob/master/LICENSE"
+      "url": "https://github.com/devbliss/devbliss-grunt-conventions/blob/master/LICENSE"
     }
   ],
   "engines": {
