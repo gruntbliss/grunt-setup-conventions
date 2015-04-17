@@ -19,7 +19,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-devbliss-conventions');
 ```
 
-### The "grunt-devbliss" tasks
+### The "grunt-devbliss-conventions" tasks
 
 #### Overview
 In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
@@ -169,4 +169,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 17 2015 15:37:14.*
+*This file was generated on Fri Apr 17 2015 16:27:25.*

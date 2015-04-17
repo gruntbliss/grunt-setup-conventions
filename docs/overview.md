@@ -1,4 +1,4 @@
-# The "grunt-devbliss" tasks
+# The "grunt-devbliss-conventions" tasks
 
 ## Overview
 In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
