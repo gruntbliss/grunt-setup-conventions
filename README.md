@@ -143,6 +143,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-05-21   v1.1.0-SNAPSHOT   add pull_request.md containing the reviews checklist
  * 2015-05-17   v1.0.0   rename plugin to grunt-devbliss-conventions
  * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
  * 2015-03-24   v0.10.2   added app/styles/fonts to copy task
@@ -169,4 +170,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 17 2015 16:27:25.*
+*This file was generated on Tue Apr 21 2015 11:09:17.*
