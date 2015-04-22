@@ -53,7 +53,7 @@
     "grunt-eslint": "6.0.x",
     "grunt-karma": "0.10.x",
     "grunt-processhtml": "0.3.x",
-    "grunt-protractor-runner": "1.1.x",
+    "grunt-protractor-runner": "2.0.x",
     "grunt-recess": "0.7.x",
     "grunt-rev": "0.1.x",
     "grunt-usemin": "2.x",
@@ -66,6 +66,6 @@
     "karma-phantomjs-launcher": "0.1.x",
     "karma-safari-launcher": "0.1.x",
     "karma-spec-reporter": "0.0.x",
-    "protractor": "1.2.x"
+    "protractor": "2.0.x"
   }
 }

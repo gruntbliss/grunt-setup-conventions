@@ -17,20 +17,20 @@ module.exports = function (grunt) {
                     port: devblissOptions.port,
                     // Change this to '0.0.0.0' to access the server from outside.
                     hostname: '0.0.0.0',
-                    middleware: function(connect, options) {
+                    middleware: function (connect, options) {
                         var middlewares = [];
-                        if (! Array.isArray(options.base)) {
+                        if (!Array.isArray(options.base)) {
                             options.base = [options.base];
                         }
 
                         // Setup the proxy
-                        middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
+                        //middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
 
                         // RewriteRules support
                         middlewares.push(rewriteRulesSnippet);
 
                         // Serve static files
-                        options.base.forEach(function(base) {
+                        options.base.forEach(function (base) {
                             middlewares.push(connect.static(base));
                         });
                         return middlewares;

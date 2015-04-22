@@ -25,7 +25,7 @@ module.exports = function (grunt) {
                         configFile: 'test/protractor.conf.js',
                         args: {
                             // Target-specific arguments
-                            seleniumServerJar: 'node_modules/grunt-devbliss-conventions/node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar',
+                            seleniumServerJar: 'node_modules/grunt-devbliss-conventions/node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar',
                             chromeDriver: 'node_modules/grunt-devbliss-conventions/node_modules/protractor/selenium/chromedriver'
                         }
                     }
