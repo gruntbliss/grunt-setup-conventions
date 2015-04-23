@@ -3,7 +3,7 @@
 module.exports = function (grunt) {
 
     // External Dependencies import
-    require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
+
 
     function loadConfig() {
 
@@ -45,6 +45,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('devbliss-configureProxies', function (config) {
         grunt.config.merge(loadConfig(grunt));
+        require('grunt-connect-proxy/tasks/connect_proxy.js')(grunt);
         grunt.task.run(['configureProxies:' + config]);
     });
 };

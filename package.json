@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "grunt-contrib-internal": "0.4.x",
-    "grunt-contrib-nodeunit": "0.3.x"
+    "grunt-contrib-nodeunit": "0.3.x",
+    "proxy-middleware": "^0.11.0"
   },
   "peerDependencies": {
     "grunt": "0.4.x"
@@ -44,7 +45,7 @@
     "grunt-connect-rewrite": "0.2.x",
     "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-concat": "0.5.x",
-    "grunt-contrib-connect": "0.5.x",
+    "grunt-contrib-connect": "0.10.x",
     "grunt-contrib-copy": "0.4.x",
     "grunt-contrib-cssmin": "0.7.x",
     "grunt-contrib-htmlmin": "0.1.x",
@@ -66,6 +67,7 @@
     "karma-phantomjs-launcher": "0.1.x",
     "karma-safari-launcher": "0.1.x",
     "karma-spec-reporter": "0.0.x",
-    "protractor": "2.0.x"
+    "protractor": "2.0.x",
+    "extend-grunt-plugin": "0.1.x"
   }
 }
