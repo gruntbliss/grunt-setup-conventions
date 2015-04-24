@@ -29,9 +29,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt-contrib-internal": "0.4.x",
-    "grunt-contrib-nodeunit": "0.3.3",
-    "proxy-middleware": "0.11.0"
+    "grunt-contrib-internal": "0.4.x"
   },
   "peerDependencies": {
     "grunt": "0.4.x"
@@ -48,6 +46,7 @@
     "grunt-contrib-copy": "0.4.x",
     "grunt-contrib-cssmin": "0.7.x",
     "grunt-contrib-htmlmin": "0.1.x",
+    "grunt-contrib-nodeunit": "0.3.3",
     "grunt-contrib-uglify": "0.6.x",
     "grunt-contrib-watch": "0.5.x",
     "grunt-eslint": "6.0.x",
@@ -66,6 +65,7 @@
     "karma-phantomjs-launcher": "0.1.x",
     "karma-safari-launcher": "0.1.x",
     "karma-spec-reporter": "0.0.x",
-    "protractor": "2.0.0"
+    "protractor": "2.0.0",
+    "proxy-middleware": "0.11.0"
   }
 }
