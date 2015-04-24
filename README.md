@@ -142,7 +142,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-04-21   v2.0.1   bug, change devDependency to dependency from proxy-middleware and grunt-contrib-nodeunit
+ * 2015-04-21   v2.0.1   bug, change proxy-middleware and grunt-contrib-nodeunit from devDependencies to dependencies
  * 2015-04-21   v2.0.0   add pull_request.md containing the reviews checklist [object Object] update protractor
  * 2015-04-17   v1.0.0   rename plugin to grunt-devbliss-conventions
  * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
@@ -170,4 +170,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 24 2015 12:41:06.*
+*This file was generated on Fri Apr 24 2015 12:51:06.*

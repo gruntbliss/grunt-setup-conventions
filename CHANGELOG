@@ -1,7 +1,7 @@
 v2.0.1:
   date: 2015-04-21
   changes:
-    - bug, change devDependency to dependency from proxy-middleware and grunt-contrib-nodeunit
+    - bug, change proxy-middleware and grunt-contrib-nodeunit from devDependencies to dependencies
 v2.0.0:
   date: 2015-04-21
   changes:
