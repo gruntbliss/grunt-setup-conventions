@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                         }
 
                         // Setup the proxy Backend
-                        var proxyOptions1 = require('url').parse('http://172.17.42.1:8070/');
+                        var proxyOptions1 = require('url').parse('http://172.17.42.1:8070/api');
                         proxyOptions1.route = '/api';
                         middlewares.push(require('proxy-middleware')(proxyOptions1));
 
