@@ -24,7 +24,6 @@ grunt.initConfig({
 - `devbliss-wiredep`: add includes scripts in the index.html file for each bower component found
 - `devbliss-connect`: configures and starts a default express server
 - `devbliss-configureRewriteRules`: use default rewrite rules
-- `devbliss-configureProxies`: use default proxies configuration
 - `devbliss-watch`: watches file changes and reloads them while developing
 - `devbliss-recess`: convert less to css
 - `devbliss-eslint`: validate js code quality
