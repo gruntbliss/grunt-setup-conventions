@@ -1,7 +1,7 @@
 {
   "name": "grunt-devbliss-conventions",
   "description": "The Devbliss Grunt conventions plugin.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/devbliss/grunt-devbliss-conventions",
   "author": {
     "name": "Devbliss",
@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "grunt-contrib-internal": "0.4.x",
-    "grunt-contrib-nodeunit": "0.3.x"
+    "grunt-contrib-nodeunit": "0.3.3",
+    "proxy-middleware": "0.11.0"
   },
   "peerDependencies": {
     "grunt": "0.4.x"
@@ -40,11 +41,10 @@
   ],
   "dependencies": {
     "grunt": "0.4.x",
-    "grunt-connect-proxy": "0.1.x",
     "grunt-connect-rewrite": "0.2.x",
     "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-concat": "0.5.x",
-    "grunt-contrib-connect": "0.5.x",
+    "grunt-contrib-connect": "0.10.1",
     "grunt-contrib-copy": "0.4.x",
     "grunt-contrib-cssmin": "0.7.x",
     "grunt-contrib-htmlmin": "0.1.x",
@@ -53,7 +53,7 @@
     "grunt-eslint": "6.0.x",
     "grunt-karma": "0.10.x",
     "grunt-processhtml": "0.3.x",
-    "grunt-protractor-runner": "1.1.x",
+    "grunt-protractor-runner": "2.0.0",
     "grunt-recess": "0.7.x",
     "grunt-rev": "0.1.x",
     "grunt-usemin": "2.x",
@@ -66,6 +66,6 @@
     "karma-phantomjs-launcher": "0.1.x",
     "karma-safari-launcher": "0.1.x",
     "karma-spec-reporter": "0.0.x",
-    "protractor": "1.2.x"
+    "protractor": "2.0.0"
   }
 }

@@ -1,9 +1,11 @@
-v1.1.0-SNAPSHOT:
-  date: 2015-05-21
+v2.0.0:
+  date: 2015-04-21
   changes:
     - add pull_request.md containing the reviews checklist
+    - configure connect proxies with http-middleware package: task `devbliss-configureProxies` does not exist any more
+    - update protractor
 v1.0.0:
-  date: 2015-05-17
+  date: 2015-04-17
   changes:
     - rename plugin to grunt-devbliss-conventions
 

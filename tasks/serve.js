@@ -5,9 +5,8 @@ module.exports = function (grunt) {
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build',
-                                   'devbliss-configureProxies:server',
-                                   'devbliss-configureRewriteRules',
-                                   'devbliss-connect:dist:keepalive']);
+                'devbliss-configureRewriteRules',
+                'devbliss-connect:dist:keepalive']);
         }
 
         grunt.task.run([
@@ -15,7 +14,6 @@ module.exports = function (grunt) {
             'devbliss-wiredep',
             'devbliss-recess',
             // added just before connect
-            'devbliss-configureProxies:server',
             'devbliss-configureRewriteRules',
             'devbliss-connect:app',
             'devbliss-watch'
