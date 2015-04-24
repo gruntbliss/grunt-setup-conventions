@@ -2,7 +2,7 @@ v2.0.0:
   date: 2015-04-21
   changes:
     - add pull_request.md containing the reviews checklist
-    - configure connect proxies with http-middleware package
+    - configure connect proxies with http-middleware package: task `devbliss-configureProxies` does not exist any more
     - update protractor
 v1.0.0:
   date: 2015-04-17

@@ -1,4 +1,4 @@
-# grunt-devbliss-conventions v1.0.0
+# grunt-devbliss-conventions v2.0.0
 
 > The Devbliss Grunt conventions plugin.
 
@@ -142,7 +142,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
- * 2015-04-21   v2.0.0   add pull_request.md containing the reviews checklist configure connect proxies with http-middleware package update protractor
+ * 2015-04-21   v2.0.0   add pull_request.md containing the reviews checklist [object Object] update protractor
  * 2015-04-17   v1.0.0   rename plugin to grunt-devbliss-conventions
  * 2015-04-07   v0.10.3   allow eslint globals for protractor and contract tests
  * 2015-03-24   v0.10.2   added app/styles/fonts to copy task
@@ -169,4 +169,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 24 2015 12:20:35.*
+*This file was generated on Fri Apr 24 2015 12:22:49.*
