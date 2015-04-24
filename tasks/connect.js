@@ -16,20 +16,23 @@ module.exports = function (grunt) {
                 options: {
                     port: devblissOptions.port,
                     // Change this to '0.0.0.0' to access the server from outside.
-                    //hostname: '0.0.0.0',
+                    hostname: '0.0.0.0',
                     middleware: function (connect, options) {
                         var middlewares = [];
                         if (!Array.isArray(options.base)) {
                             options.base = [options.base];
                         }
 
-                        // Setup the proxy
-                        // Proxy all requests to target the local application.
-                        var proxyOptions = require('url').parse('http://google.com/');
-                        proxyOptions.route = '/api';
+                        // Setup the proxy Backend
+                        var proxyOptions1 = require('url').parse('http://172.17.42.1:8070/');
+                        proxyOptions1.route = '/api';
+                        middlewares.push(require('proxy-middleware')(proxyOptions1));
 
-                        middlewares.push(require('proxy-middleware')(proxyOptions));
-                        //middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
+                        // Setup the proxy qti player
+                        var proxyOptions2 = require('url').parse('http://localhost:13771/');
+                        proxyOptions2.route = '/qtiplayer';
+                        middlewares.push(require('proxy-middleware')(proxyOptions2));
+
 
                         // RewriteRules support
                         middlewares.push(rewriteRulesSnippet);
