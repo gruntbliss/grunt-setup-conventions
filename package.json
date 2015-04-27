@@ -38,6 +38,7 @@
     "gruntplugin"
   ],
   "dependencies": {
+    "extend-grunt-plugin": "0.1.0",
     "grunt": "0.4.x",
     "grunt-connect-rewrite": "0.2.x",
     "grunt-contrib-clean": "0.5.x",
