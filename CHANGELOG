@@ -1,3 +1,7 @@
+v3.0.0-SNAPSHOT:
+  date: 2015-04-27
+  changes:
+    - copy task is now implemented with extend-grunt-plugin and can be configured from consumer project
 v2.0.1:
   date: 2015-04-21
   changes:

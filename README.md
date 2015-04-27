@@ -22,7 +22,7 @@ grunt.loadNpmTasks('grunt-devbliss-conventions');
 ### The "grunt-devbliss-conventions" tasks
 
 #### Overview
-In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, you have to define a section named `devbliss` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
@@ -33,6 +33,29 @@ grunt.initConfig({
   },
 });
 ```
+
+Optional: You can add your own configuration for the following tasks: copy.
+
+For example:
+```js
+grunt.initConfig({
+  devbliss: {
+      port: 9000,
+      testport: 9001,
+      livereload: 9002
+  },
+  copy: {
+      your_target: {
+          files: [
+              {
+                  ...
+              }
+          ]
+      }
+  }
+});
+```
+Then you can call `grunt-devbliss-copy:your_target` or `grunt-devbliss-copy` (which will run all targets). 
 
 #### Options
 
@@ -142,6 +165,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-04-27   v3.0.0-SNAPSHOT   copy task is now implemented with extend-grunt-plugin and can be configured from consumer project
  * 2015-04-21   v2.0.1   bug, change proxy-middleware and grunt-contrib-nodeunit from devDependencies to dependencies
  * 2015-04-21   v2.0.0   add pull_request.md containing the reviews checklist [object Object] update protractor
  * 2015-04-17   v1.0.0   rename plugin to grunt-devbliss-conventions
@@ -170,4 +194,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri Apr 24 2015 12:51:06.*
+*This file was generated on Mon Apr 27 2015 09:28:42.*

@@ -1,7 +1,7 @@
 # The "grunt-devbliss-conventions" tasks
 
 ## Overview
-In your project's Gruntfile, add a section named `devbliss` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, you have to define a section named `devbliss` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
@@ -12,6 +12,29 @@ grunt.initConfig({
   },
 });
 ```
+
+Optional: You can add your own configuration for the following tasks: copy.
+
+For example:
+```js
+grunt.initConfig({
+  devbliss: {
+      port: 9000,
+      testport: 9001,
+      livereload: 9002
+  },
+  copy: {
+      your_target: {
+          files: [
+              {
+                  ...
+              }
+          ]
+      }
+  }
+});
+```
+Then you can call `grunt-devbliss-copy:your_target` or `grunt-devbliss-copy` (which will run all targets). 
 
 ## Options
 
