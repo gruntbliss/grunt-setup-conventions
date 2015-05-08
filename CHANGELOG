@@ -1,6 +1,7 @@
 v2.0.1:
-  date: 2015-04-21
+  date: 2015-05-08
   changes:
+    - add global value Pact in eslint config
     - bug, change proxy-middleware and grunt-contrib-nodeunit from devDependencies to dependencies
 v2.0.0:
   date: 2015-04-21
