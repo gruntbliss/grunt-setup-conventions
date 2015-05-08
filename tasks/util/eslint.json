@@ -176,7 +176,8 @@
       "it": false,
       "jasmine": false,
       "protractor": true,
-      "spyOn": false
+      "spyOn": false,
+      "Pact": false
     }
 
 }
