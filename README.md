@@ -142,6 +142,7 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 ## Release History
 
+ * 2015-05-08   v2.1.1   adjust Main Frontend path
  * 2015-05-08   v2.1.0   add global value Pact in eslint config
  * 2015-05-08   v2.0.1   bug, change proxy-middleware and grunt-contrib-nodeunit from devDependencies to dependencies
  * 2015-04-21   v2.0.0   add pull_request.md containing the reviews checklist [object Object] update protractor
@@ -171,4 +172,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Fri May 08 2015 15:10:03.*
+*This file was generated on Mon May 11 2015 10:58:26.*
