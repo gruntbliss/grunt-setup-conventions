@@ -1,6 +1,6 @@
-# grunt-devbliss-conventions v2.1.0
+# grunt-setup-conventions v2.1.1
 
-> The Devbliss Grunt conventions plugin.
+> The Grunt conventions plugin.
 
 
 
@@ -10,13 +10,13 @@ This plugin requires Grunt `0.4.x`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-devbliss-conventions --save-dev
+npm install grunt-setup-conventions --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-devbliss-conventions');
+grunt.loadNpmTasks('grunt-setup-conventions');
 ```
 
 ### The "grunt-devbliss-conventions" tasks
@@ -172,4 +172,4 @@ To recreate the README.MD just run `grunt build-contrib`.
 
 Task submitted by [ devbliss GmbH](https://www.devbliss.com/)
 
-*This file was generated on Mon May 11 2015 10:58:26.*
+*This file was generated on Tue Jun 16 2015 14:52:27.*
